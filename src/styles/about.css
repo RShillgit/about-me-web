@@ -1,0 +1,8 @@
+.about-container {
+    padding: 1rem;
+    border: 1px solid wheat;
+}
+.about-section-content {
+    display: flex;
+    flex-direction: column;
+}

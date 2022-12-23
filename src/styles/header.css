@@ -1,0 +1,10 @@
+.header-container {
+    display: flex;
+    justify-content: left;
+}
+.header-content {
+    padding: 1rem;
+    border: 1px solid wheat;
+    height: 20rem;
+    width: 50vw;
+}

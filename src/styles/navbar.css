@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: right;
+}
+.navbar-links {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.navbar-individual-link {
+    padding: 1rem;
+}
+.navbar-clickable {
+    font-size: large;
+    margin: 0;
+}
+.navbar-clickable:hover {
+    cursor: pointer;
+}
+#navbar-resume {
+    font-size: x-large;
+    color: blue;
+}

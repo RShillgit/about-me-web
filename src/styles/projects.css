@@ -1,0 +1,14 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-example {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid goldenrod;
+    border-radius: 1rem;
+    height: 50rem;
+    width: 66.6vw;
+}
