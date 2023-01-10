@@ -16,7 +16,7 @@
     margin: 0 1rem 0 1rem;
 }
 .navbar-individual-link {
-    padding: 1rem;
+    padding: 1vw;
 }
 .navbar-clickable {
     border: none;
@@ -29,4 +29,10 @@
 #navbar-resume {
     font-size: large;
     color: blue;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        justify-content: center;
+    }
 }

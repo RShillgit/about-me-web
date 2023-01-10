@@ -15,7 +15,10 @@ const Header = () => {
     return (
         <div className="header-container">
             <div className="header-content">
-                <h2>Cool animation that displays "Robert Siciliano - Aspiring Web Developer</h2>
+                <div className='header-displayedText'>Robert Siciliano</div> 
+                <div className='header-revealedText'> 
+                    <span> | Aspiring Web Developer</span>
+                </div>
             </div>
         </div>
     )
