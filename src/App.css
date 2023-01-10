@@ -1,8 +1,16 @@
+@font-face {
+    font-family: Exo_2;
+    src: url('./fonts/Exo_2/Exo2-VariableFont_wght.ttf');
+}
+
 body {
     margin: 0;
 }
+html, button, input {
+    font-family: Exo_2;
+}
 
-.header-container, .about-container, .projects-container, .project-example {
+.about-container, .projects-container, .project-example {
     margin: 0 1rem 1rem 1rem;
 }
 

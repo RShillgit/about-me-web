@@ -1,4 +1,5 @@
 import '../styles/about.css';
+
 /*
     I want this about section to be a large portion of the website.
 
@@ -21,43 +22,44 @@ const About = () => {
 
                 <div className='about-section-content'>
                     <div className="about-education">
-                        <p>Degree in Exercise Science...</p>
+                        <label>
+                            B.S. in Exercise Science from SUNY Cortland 2018-2022
+                            <ul><li>2018-2022</li></ul>
+                        </label>
                     </div>
                 </div>
             </div>
 
             <div className="about-section">
                 <div className='about-section-title'>
-                    <h3>My interests</h3>
+                    <h3>My Interests</h3>
                 </div>
 
                 <div className='about-section-content'>
                     <div className="about-interests">
-                        <p>Fitness Enthusiast...</p>
-                    </div>
-                    <div className="about-interests">
-                        <p>Gamer...</p>
-                    </div>
-                    <div className="about-interests">
-                        <p>Wrestling, MMA...</p>
+                        <label>
+                            I Enjoy
+                            <ul>
+                                <li>Weight Lifting - more specifically strength and bodybuilding style training</li>
+                                <li>Running - I recently completed my first marathon in 3:25:22</li>
+                                <li>Wrestling - I wrestled in high school and am currently coaching at the same school</li>
+                                <li>Watching the UFC and college Wrestling</li>
+                            </ul>
+                        </label>
+                        
                     </div>
                 </div>
             </div>
 
             <div className="about-section">
                 <div className='about-section-title'>
-                    <h3>My Goals</h3>
+                    <h3>My Goals for the Near Future</h3>
                 </div>
 
                 <div className='about-section-content'>
                     <div className="about-goals">
                         <p>Getting a job as a software engineer</p>
-                    </div>
-                    <div className="about-goals">
-                        <p>Running a sub 3:15 marathon...</p>
-                    </div>
-                    <div className="about-goals">
-                        <p>Learning a new martial art</p>
+                        <p>Running a sub 3:15:00 marathon</p>
                     </div>
                 </div>
             </div>
