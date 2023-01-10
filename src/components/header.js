@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <div className="header-container">
             <div className="header-content">
-                <h2>Hello, my name is Robert Siciliano...</h2>
+                <h2>Cool animation that displays "Robert Siciliano - Aspiring Web Developer</h2>
             </div>
         </div>
     )

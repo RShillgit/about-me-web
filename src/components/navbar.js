@@ -18,16 +18,16 @@ const NavBar = () => {
         <div className="navbar">
             <div className="navbar-links">
                 <div className="navbar-individual-link">
-                    <p className="navbar-clickable">About</p>
+                    <button className="navbar-clickable">About</button>
                 </div>
                 <div className="navbar-individual-link">
-                    <p className="navbar-clickable">Projects</p>
+                    <button className="navbar-clickable">Projects</button>
                 </div>
                 <div className="navbar-individual-link">
-                    <p className="navbar-clickable">Contact</p>
+                    <button className="navbar-clickable">Contact</button>
                 </div>
                 <div className="navbar-individual-link">
-                    <p className="navbar-clickable" id="navbar-resume">Resume</p>
+                    <button className="navbar-clickable" id="navbar-resume">Resume</button>
                 </div>
             </div>
         </div>

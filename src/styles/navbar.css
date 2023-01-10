@@ -1,23 +1,32 @@
 .navbar {
+    position: fixed;
+    align-self: baseline;
     display: flex;
     justify-content: right;
+    width: 100vw;
+    border-bottom: 1px solid gainsboro;
+    background-color: white;
+    height: 8vh;
+    z-index: 1;
 }
 .navbar-links {
     display: flex;
     gap: 0.5rem;
     align-items: center;
+    margin: 0 1rem 0 1rem;
 }
 .navbar-individual-link {
     padding: 1rem;
 }
 .navbar-clickable {
-    font-size: large;
+    border: none;
+    background:none;
     margin: 0;
 }
 .navbar-clickable:hover {
     cursor: pointer;
 }
 #navbar-resume {
-    font-size: x-large;
+    font-size: large;
     color: blue;
 }
