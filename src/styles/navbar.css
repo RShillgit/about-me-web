@@ -32,9 +32,39 @@
     font-size: large;
     color: blue;
 }
+#homeBtn {
+    padding: 0;
+}
 
-@media (max-width: 800px) {
+/* Will have to edit if adding light/dark button */
+@media (max-width: 500px) {
     .navbar {
         justify-content: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar-links, .home-link {
+        margin: 0;
+        gap: 0;
+    }
+    .navbar {
+        gap: 5vw;
+    }
+}
+
+@media (max-width: 350px) {
+    .navbar {
+        gap: 0;
+    }
+    .navbar-links, .home-link {
+        margin: 0;
+        gap: 0;
+    }
+    .navbar-individual-link button, #navbar-resume {
+        font-size: small;
+    }
+    #homeBtnImg {
+        width: 10vw;
     }
 }

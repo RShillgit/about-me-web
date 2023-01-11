@@ -1,4 +1,5 @@
 import '../styles/navbar.css';
+import homeBtn from '../images/home.png';
 /*
     I want this navbar to have a few different links like an about section,
 a section for my resume, a section for my contact information, and maybe
@@ -33,7 +34,7 @@ const NavBar = () => {
     const buttonClickHandler = (e) => {
 
         // Home
-        if (e.target.innerHTML === 'Home') scrollIntoViewWithOffset('.header-container');
+        if (e.target.id === 'homeBtnImg') scrollIntoViewWithOffset('.header-container');
 
         // About
         else if (e.target.innerHTML === 'About') scrollIntoViewWithOffset('.about-container');
@@ -50,7 +51,9 @@ const NavBar = () => {
     return (
         <div className="navbar">
             <div className='home-link'>
-                <button className="navbar-clickable" onClick={buttonClickHandler}>Home</button>
+                <button id='homeBtn' className="navbar-clickable" onClick={buttonClickHandler}>
+                    <img id='homeBtnImg' src={homeBtn} alt='Home' />
+                </button>   
             </div>
             <div className="navbar-links">
                 <div className="navbar-individual-link">
