@@ -23,7 +23,7 @@ const About = () => {
                 <div className='about-section-content'>
                     <div className="about-education">
                         <label>
-                            B.S. in Exercise Science from SUNY Cortland 2018-2022
+                            B.S. in Exercise Science from SUNY Cortland
                             <ul><li>2018-2022</li></ul>
                         </label>
                     </div>
@@ -32,21 +32,23 @@ const About = () => {
 
             <div className="about-section">
                 <div className='about-section-title'>
-                    <h3>My Interests</h3>
+                    <h3>I Enjoy</h3>
                 </div>
 
                 <div className='about-section-content'>
                     <div className="about-interests">
-                        <label>
-                            I Enjoy
-                            <ul>
-                                <li>Weight Lifting - more specifically strength and bodybuilding style training</li>
-                                <li>Running - I recently completed my first marathon in 3:25:22</li>
-                                <li>Wrestling - I wrestled in high school and am currently coaching at the same school</li>
-                                <li>Watching the UFC and college Wrestling</li>
-                            </ul>
-                        </label>
-                        
+                     
+                        <ul>
+                            <li>Weight Lifting - more specifically strength and bodybuilding style training</li>
+                            <li>
+                                Running - I recently completed my first marathon in 3 hours, 25 minutes, and 22 seconds
+                                <ul>
+                                    <li> The picture depicted above was captured during the early stages of the race</li>
+                                </ul>
+                            </li>
+                            <li>Wrestling - I wrestled in high school and now I coach at my high school and middle school</li>
+                            <li>Watching UFC and college wrestling</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -58,8 +60,10 @@ const About = () => {
 
                 <div className='about-section-content'>
                     <div className="about-goals">
-                        <p>Getting a job as a software engineer</p>
-                        <p>Running a sub 3:15:00 marathon</p>
+                        <ul>
+                            <li>Getting a job as a software engineer</li>
+                            <li>Running a sub 3:15:00 marathon</li>
+                        </ul>
                     </div>
                 </div>
             </div>
