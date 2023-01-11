@@ -14,20 +14,56 @@ when you scroll down I want this bar to be accessable.
 */
 
 const NavBar = () => {
+
+    // Calculates where to scroll
+    const scrollIntoViewWithOffset = (selector) => {
+
+        const vh = window.innerHeight;
+        const offset = vh * 0.09;
+
+        return window.scrollTo({
+          behavior: 'smooth',
+          top:
+            document.querySelector(selector).getBoundingClientRect().top -
+            document.body.getBoundingClientRect().top -
+            offset,
+        })
+      }
+
+    const buttonClickHandler = (e) => {
+
+        // Home
+        if (e.target.innerHTML === 'Home') scrollIntoViewWithOffset('.header-container');
+
+        // About
+        else if (e.target.innerHTML === 'About') scrollIntoViewWithOffset('.about-container');
+
+        // Projects
+        else if (e.target.innerHTML === 'Projects') scrollIntoViewWithOffset('.projects-container');
+        
+        // Contact
+        else if (e.target.innerHTML === 'Contact') scrollIntoViewWithOffset('.contact-container');
+
+        // Resume
+    }
+
     return (
         <div className="navbar">
+            <div className='home-link'>
+                <button className="navbar-clickable" onClick={buttonClickHandler}>Home</button>
+            </div>
             <div className="navbar-links">
                 <div className="navbar-individual-link">
-                    <button className="navbar-clickable">About</button>
+                    <button className="navbar-clickable" onClick={buttonClickHandler}>About</button>
                 </div>
                 <div className="navbar-individual-link">
-                    <button className="navbar-clickable">Projects</button>
+                    <button className="navbar-clickable" onClick={buttonClickHandler}>Projects</button>
                 </div>
                 <div className="navbar-individual-link">
-                    <button className="navbar-clickable">Contact</button>
+                    <button className="navbar-clickable" onClick={buttonClickHandler}>Contact</button>
                 </div>
                 <div className="navbar-individual-link">
-                    <button className="navbar-clickable" id="navbar-resume">Resume</button>
+                    <button className="navbar-clickable" id="navbar-resume" onClick={buttonClickHandler}>Resume</button>
                 </div>
             </div>
         </div>

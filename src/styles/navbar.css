@@ -2,18 +2,20 @@
     position: fixed;
     align-self: baseline;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     width: 100vw;
     border-bottom: 1px solid gainsboro;
     background-color: white;
     height: 8vh;
     z-index: 1;
 }
-.navbar-links {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
+.home-link, .navbar-links {
     margin: 0 1rem 0 1rem;
+    display: flex;
+    align-items: center;
+}
+.navbar-links {
+    gap: 0.5rem;
 }
 .navbar-individual-link {
     padding: 1vw;
