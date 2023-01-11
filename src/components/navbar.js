@@ -13,8 +13,8 @@ const NavBar = () => {
     // On mount
     useEffect(() => {
 
-        // If initial screen width is over 400px, create normal navbar
-        if(window.innerWidth >= 400) {
+        // If initial screen width is over 500px, create normal navbar
+        if(window.innerWidth >= 500) {
             setNavbarLinks(
                 <div className="navbar-links">
                     <div className="navbar-individual-link">
@@ -32,8 +32,8 @@ const NavBar = () => {
                 </div>
             )
         }
-        // If its under 400px, set navbarSmall state to true to render options menu
-        else if (window.innerWidth < 400) setNavbarSmall(true);
+        // If its under 500px, set navbarSmall state to true to render options menu
+        else if (window.innerWidth < 500) setNavbarSmall(true);
 
         // Monitor window resize
         window.onresize = () => navbarMenuMonitor();
@@ -100,11 +100,11 @@ const NavBar = () => {
     // Monitors change in viewport width
     const navbarMenuMonitor = () => {
 
-        // If the width is less than 400px 
-        if (window.innerWidth < 400) setNavbarSmall(true);
+        // If the width is less than 500px 
+        if (window.innerWidth < 500) setNavbarSmall(true);
 
-        // If the width is more than 400px
-        else if (window.innerWidth >= 400) setNavbarSmall(false);
+        // If the width is more than 500px
+        else if (window.innerWidth >= 500) setNavbarSmall(false);
         
     }
 
@@ -144,6 +144,7 @@ const NavBar = () => {
         // Resume
     }
 
+    // TODO Slider doesnt move sometimes when you click by the border
     const lightDarkClickHandler = (e) => {
         e.preventDefault();
 
@@ -161,7 +162,7 @@ const NavBar = () => {
         
     }
 
-    // Displays dropdown menu on devices < 400px wide
+    // Displays dropdown menu on devices < 500px wide
     const displayOptions = () => {
         // Get options menu div
         const optionsMenu = document.querySelector('.navbar-condensed-dropdown');

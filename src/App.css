@@ -41,3 +41,9 @@ body.dark .header-content {
     background-color: #12121280;
     color: #F7F7F7;
 }
+body.dark #optionsMenu {
+    filter: invert(100%) sepia(0%) saturate(5014%) hue-rotate(179deg) brightness(113%) contrast(94%);
+}
+body.dark .navbar-condensed-dropdown.open {
+    background-color: #27241D;
+}
