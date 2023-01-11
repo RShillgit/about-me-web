@@ -1,18 +1,7 @@
 import '../styles/navbar.css';
 import homeBtn from '../images/home.png';
-/*
-    I want this navbar to have a few different links like an about section,
-a section for my resume, a section for my contact information, and maybe
-a few more.
-
-    I want the links to send you to the page location rather than a new
-page.  For example, when you click the contact information, it scrolls down
-to the location where my contact information is.
-
-    I also want this navbar to be at the top of the page at all times, even
-when you scroll down I want this bar to be accessable.
-
-*/
+import moon from '../images/moon.png';
+import sun from '../images/sun.png';
 
 const NavBar = () => {
 
@@ -48,12 +37,38 @@ const NavBar = () => {
         // Resume
     }
 
+    const lightDarkClickHandler = (e) => {
+        e.preventDefault();
+
+        const checkbox = document.getElementById('light-dark-checkbox');
+
+        // Check/Uncheck checkbox and toggle light/dark mode respectively
+        if (checkbox.checked === false) {
+            document.body.classList.toggle('dark');
+            return checkbox.checked = true;
+        }
+        else {
+            document.body.classList.toggle('dark');
+            return checkbox.checked = false;
+        }
+        
+    }
+
     return (
         <div className="navbar">
-            <div className='home-link'>
+            <div className='left-links'>
                 <button id='homeBtn' className="navbar-clickable" onClick={buttonClickHandler}>
                     <img id='homeBtnImg' src={homeBtn} alt='Home' />
-                </button>   
+                </button>  
+
+                <div className='light-dark-mode' onClick={lightDarkClickHandler}>
+                    <input type="checkbox" id='light-dark-checkbox'/>
+                    <label htmlFor="light-dark-checkbox" className="light-dark-label">
+                        <img src={moon} id='moon' alt='dark'/>
+                        <img src={sun} id='sun' alt='light'/>
+                        <div className='toggle-slider'/>
+                    </label>
+                </div>
             </div>
             <div className="navbar-links">
                 <div className="navbar-individual-link">
