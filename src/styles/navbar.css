@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     width: 100vw;
-    background-color: white;
+    background-color: #F7F7F7;
     height: 8vh;
     z-index: 1;
 }
@@ -33,11 +33,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: #F7F7F7;
     
 
     /* Going to have to change units to make responsive */
-    border: 2px solid black;
+    border: 2px solid #121212;
     padding: 5px;
     border-radius: 22px;
     width: 50px;
@@ -48,14 +48,14 @@
     width: 20px;
 }
 #moon {
-    filter: invert(100%) sepia(0%) saturate(4211%) hue-rotate(34deg) brightness(112%) contrast(70%);
+    filter: invert(100%) sepia(0%) saturate(5014%) hue-rotate(179deg) brightness(113%) contrast(94%);
 }
 #sun {
-    filter: invert(85%) sepia(27%) saturate(7226%) hue-rotate(8deg) brightness(103%) contrast(105%);
+    filter: invert(83%) sepia(42%) saturate(4398%) hue-rotate(354deg) brightness(109%) contrast(102%);
 }
 .light-dark-mode .toggle-slider {
     position: absolute;
-    background-color: black;
+    background-color: #121212;
 
     /* Going to have to change units to make responsive */
     width: 22px;
@@ -84,11 +84,46 @@
 }
 #navbar-resume {
     font-size: large;
-    color: blue;
+    color: #0096FF;
 }
 #homeBtn {
     padding: 0;
 }
+
+/* Condensed Navbar */
+.navbar.condensed {
+    justify-content: space-between;
+}
+.navbar.condensed .left-links {
+    margin-left: 2vw;
+}
+.navbar.condensed #optionsMenu {
+    padding: 0;
+}
+.navbar-links.condensed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2vw;
+}
+.navbar-condensed-dropdown {
+    display: none;
+}
+.navbar-condensed-dropdown.open {
+    display: block;
+    position: absolute;
+    top: 8vh;
+    background-color: #eeeeee;
+    border-radius: 0 0 2vw 2vw;
+    right: 0;
+}
+.navbar-links.condensed .navbar-condensed-dropdown.open .navbar-individual-link button {
+    font-size: 10vw;
+}
+.navbar-links.condensed .navbar-condensed-dropdown.open .navbar-individual-link #navbar-resume   {
+    font-size: 10vw;
+}
+/**/
 
 /* Will have to edit if adding light/dark button */
 @media (max-width: 500px) {
@@ -97,7 +132,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .navbar-links, .left-links {
         margin: 0;
         gap: 0;
@@ -106,6 +141,8 @@
         gap: 5vw;
     }
 }
+
+/* Under 400px */
 
 @media (max-width: 350px) {
     .navbar {
@@ -122,3 +159,5 @@
         width: 10vw;
     }
 }
+
+/* Navbar changes when height goes under 500px  */
