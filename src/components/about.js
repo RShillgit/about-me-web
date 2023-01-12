@@ -16,8 +16,8 @@ const About = () => {
         <div className="about-container">
 
             <div className="about-section">
-                <div className='about-section-title'>
-                    <h3>My Education</h3>
+                <div className='about-section-title' id='edu'>
+                    <h2>My Education</h2>
                 </div>
 
                 <div className='about-section-content'>
@@ -32,7 +32,7 @@ const About = () => {
 
             <div className="about-section">
                 <div className='about-section-title'>
-                    <h3>I Enjoy</h3>
+                    <h2>I Enjoy</h2>
                 </div>
 
                 <div className='about-section-content'>
@@ -55,7 +55,7 @@ const About = () => {
 
             <div className="about-section">
                 <div className='about-section-title'>
-                    <h3>My Goals for the Near Future</h3>
+                    <h2>My Goals for the Near Future</h2>
                 </div>
 
                 <div className='about-section-content'>

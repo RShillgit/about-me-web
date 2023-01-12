@@ -144,7 +144,7 @@ const NavBar = () => {
         // Resume
     }
 
-    // TODO Slider doesnt move sometimes when you click by the border
+    // TODO Slider doesnt move sometimes when you click directly in the center, disable checkbox?
     const lightDarkClickHandler = (e) => {
         e.preventDefault();
 

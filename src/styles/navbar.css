@@ -4,9 +4,10 @@
     display: flex;
     justify-content: space-between;
     width: 100vw;
-    background-color: #F7F7F7;
+    background-color: #DEE4E7;
     height: 8vh;
     z-index: 1;
+    box-shadow: 0px 2px 2px #222222;
 }
 .left-links, .navbar-links {
     margin: 0 1rem 0 1rem;
@@ -35,9 +36,8 @@
     justify-content: space-between;
     background-color: #F7F7F7;
     
-
     /* Going to have to change units to make responsive */
-    border: 2px solid #121212;
+    border: 2px solid #222222;
     padding: 5px;
     border-radius: 22px;
     width: 50px;
@@ -55,7 +55,7 @@
 }
 .light-dark-mode .toggle-slider {
     position: absolute;
-    background-color: #121212;
+    background-color: #222222;
 
     /* Going to have to change units to make responsive */
     width: 22px;
@@ -74,6 +74,9 @@
 .navbar-individual-link {
     padding: 1vw;
 }
+.navbar-individual-link button {
+    color: #222222;
+}
 .navbar-clickable {
     border: none;
     background:none;
@@ -85,10 +88,13 @@
 }
 #navbar-resume {
     font-size: 2vh;
-    color: #2196F3
+    color: #2196F3;
 }
 #homeBtn {
     padding: 0;
+}
+#homeBtnImg {
+    filter: invert(11%) sepia(0%) saturate(18%) hue-rotate(145deg) brightness(96%) contrast(93%);
 }
 
 /* Condensed Navbar */
@@ -120,6 +126,7 @@
 }
 .navbar-links.condensed .navbar-condensed-dropdown.open .navbar-individual-link button {
     font-size: 10vw;
+    margin-right: 2vw;
 }
 .navbar-links.condensed .navbar-condensed-dropdown.open .navbar-individual-link #navbar-resume   {
     font-size: 10vw;

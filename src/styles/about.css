@@ -1,13 +1,26 @@
 .about-container {
     margin-top: 1rem;
     padding: 1rem;
-    border: 1px solid wheat;
+    border-radius: 1vw;
+    background-color: #E7E7E7E7;
+    box-shadow: -0.5vw 0.5vw 0.5vw #37474F;
 }
 .about-section-content {
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
-
+.about-section-title {
+    display: flex;
+    color: #2196F3;
+    justify-content: center;
+}
+#edu h2 {
+    margin-top: 0;
+}
+.about-education ul {
+    margin-bottom: 0;
+}
 .about-interests ul, .about-goals ul {
     margin: 0;
 }

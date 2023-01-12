@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-shadow: 0px 2px 2px #222222;
 }
 .headerImg img {
     display: flex;
