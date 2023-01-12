@@ -7,8 +7,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid goldenrod;
-    border-radius: 1rem;
     height: 50rem;
     width: 66.6vw;
+    border-radius: 1vw;
+    background-color: #E7E7E7E7;
+    box-shadow: -0.5vw 0.5vw 0.5vw #37474F;
+}
+.project-title h3 {
+    color: #2196F3;
+}
+
+/* Dark Mode */
+body.dark .project-example {
+    background-color: #37474F;
+    box-shadow: -0.5vw 0.5vw 0.5vw #263238;
+    color: #F7F7F7;
 }

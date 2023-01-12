@@ -1,16 +1,5 @@
 import '../styles/about.css';
 
-/*
-    I want this about section to be a large portion of the website.
-
-    I want it to clearly represent the type of person I am:
-        - maybe dive a little deeper into my goals and motivation
-        - talk about what I want to do in the future after learning to code
-
-        I want an employer to read this page and say "Wow, lets hire him",
-    then have one of their colleagues go, "You didnt even look at his experience yet"
-*/
-
 const About = () => {
     return (
         <div className="about-container">

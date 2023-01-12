@@ -9,6 +9,7 @@ const NavBar = () => {
 
     const [navbarLinks, setNavbarLinks] = useState('');
     const [navbarSmall, setNavbarSmall] = useState(false);
+    const [activeLink, setActiveLink] = useState(null);
 
     // On mount
     useEffect(() => {
@@ -133,17 +134,22 @@ const NavBar = () => {
         if (e.target.id === 'homeBtnImg') scrollIntoViewWithOffset('.header-container');
 
         // About
-        else if (e.target.innerHTML === 'About') scrollIntoViewWithOffset('.about-container');
+        else if (e.target.innerHTML === 'About') { 
+            scrollIntoViewWithOffset('.about-container');
+        }
 
         // Projects
-        else if (e.target.innerHTML === 'Projects') scrollIntoViewWithOffset('.projects-container');
+        else if (e.target.innerHTML === 'Projects') {
+            scrollIntoViewWithOffset('.projects-container');
+        }
         
         // Contact
-        else if (e.target.innerHTML === 'Contact') scrollIntoViewWithOffset('.contact-container');
+        else if (e.target.innerHTML === 'Contact') {
+            scrollIntoViewWithOffset('.contact-container');
+        }
 
         // Resume
     }
-
 
     const lightDarkClickHandler = (e) => {
         e.preventDefault();
