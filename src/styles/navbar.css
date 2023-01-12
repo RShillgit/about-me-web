@@ -20,7 +20,7 @@
     gap: 2vw;
 }
 
-/* Light/dark mode */
+/* Light/dark slider */
 .light-dark-mode {
     display: flex;
     justify-content: center;
@@ -38,8 +38,6 @@
     align-items: center;
     justify-content: space-between;
     background-color: #F7F7F7;
-    
-    /* Going to have to change units to make responsive */
     border: 2px solid #222222;
     padding: 5px;
     border-radius: 22px;
@@ -50,20 +48,18 @@
     z-index: -1;
 }
 .light-dark-mode .light-dark-label img {
-    /* Going to have to change units to make responsive */
     width: 20px;
 }
 #moon {
     filter: invert(100%) sepia(0%) saturate(5014%) hue-rotate(179deg) brightness(113%) contrast(94%);
+    width: 20px;
 }
 #sun {
     filter: invert(83%) sepia(42%) saturate(4398%) hue-rotate(354deg) brightness(109%) contrast(102%);
 }
 .light-dark-mode .toggle-slider {
     position: absolute;
-    background-color: #222222;
-
-    /* Going to have to change units to make responsive */
+    background-color: #2196F3;
     width: 22px;
     height: 22px;
     border-radius: 22px;
@@ -100,7 +96,7 @@
     padding: 0;
 }
 #homeBtnImg {
-    filter: invert(11%) sepia(0%) saturate(18%) hue-rotate(145deg) brightness(96%) contrast(93%);
+    filter: invert(47%) sepia(99%) saturate(1856%) hue-rotate(184deg) brightness(97%) contrast(96%);
 }
 
 /* Condensed Navbar */
@@ -167,14 +163,12 @@ body.dark .navbar {
 body.dark .navbar button {
     color: #F7F7F7;
 }
-body.dark #homeBtnImg {
-    filter: invert(100%) sepia(0%) saturate(5014%) hue-rotate(179deg) brightness(113%) contrast(94%);
-}
+
 body.dark .navbar .light-dark-label {
     border: 2px solid #F7F7F7;
 }
 body.dark .navbar .toggle-slider {
-    background-color: #F7F7F7;
+    background-color: #2196F3;
 }
 body.dark #optionsMenu {
     filter: invert(100%) sepia(0%) saturate(5014%) hue-rotate(179deg) brightness(113%) contrast(94%);
