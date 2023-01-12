@@ -144,7 +144,7 @@ const NavBar = () => {
         // Resume
     }
 
-    // TODO Slider doesnt move sometimes when you click directly in the center, disable checkbox?
+
     const lightDarkClickHandler = (e) => {
         e.preventDefault();
 
@@ -177,7 +177,7 @@ const NavBar = () => {
                 </button>  
 
                 <div className='light-dark-mode' onClick={lightDarkClickHandler}>
-                    <input type="checkbox" id='light-dark-checkbox'/>
+                    <input type="checkbox" id='light-dark-checkbox' disabled/>
                     <label htmlFor="light-dark-checkbox" className="light-dark-label">
                         <img src={moon} id='moon' alt='dark'/>
                         <img src={sun} id='sun' alt='light'/>

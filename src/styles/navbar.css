@@ -43,6 +43,9 @@
     width: 50px;
     height: 20px;
 }
+#light-dark-checkbox {
+    z-index: -1;
+}
 .light-dark-mode .light-dark-label img {
     /* Going to have to change units to make responsive */
     width: 20px;
@@ -61,7 +64,7 @@
     width: 22px;
     height: 22px;
     border-radius: 22px;
-    transition: transform 0.2s linear;
+    transition: all 0.2s linear;
 }
 .light-dark-mode #light-dark-checkbox:checked + .light-dark-label .toggle-slider {
     transform: translateX(30px);

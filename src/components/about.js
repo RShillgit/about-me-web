@@ -26,13 +26,20 @@ const About = () => {
                             B.S. in Exercise Science from SUNY Cortland
                             <ul><li>2018-2022</li></ul>
                         </label>
+
+                        <ul>
+                            <li>B.S in Exercise Science from Suny Cortland</li>
+                            <ul><li>2018-2022</li></ul>
+                            <li>Coding self-study</li>
+                            <ul><li>June 2022 - Present</li></ul>
+                        </ul>
                     </div>
                 </div>
             </div>
 
             <div className="about-section">
                 <div className='about-section-title'>
-                    <h2>I Enjoy</h2>
+                    <h2>My Interests</h2>
                 </div>
 
                 <div className='about-section-content'>
