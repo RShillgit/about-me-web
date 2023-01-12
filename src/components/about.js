@@ -22,11 +22,6 @@ const About = () => {
 
                 <div className='about-section-content'>
                     <div className="about-education">
-                        <label>
-                            B.S. in Exercise Science from SUNY Cortland
-                            <ul><li>2018-2022</li></ul>
-                        </label>
-
                         <ul>
                             <li>B.S in Exercise Science from Suny Cortland</li>
                             <ul><li>2018-2022</li></ul>

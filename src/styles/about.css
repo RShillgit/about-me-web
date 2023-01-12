@@ -18,9 +18,9 @@
 #edu h2 {
     margin-top: 0;
 }
-.about-education ul {
-    margin-bottom: 0;
-}
-.about-interests ul, .about-goals ul {
+.about-education ul, .about-interests ul {
     margin: 0;
+}
+.about-goals ul {
+    margin-top: 0;
 }

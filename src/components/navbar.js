@@ -127,7 +127,7 @@ const NavBar = () => {
 
         const openOptionsMenu = document.querySelector('.navbar-condensed-dropdown.open');
         // Remove options menu if it is there
-        if (openOptionsMenu) openOptionsMenu.classList.toggle('open');
+        if (openOptionsMenu) openOptionsMenu.classList.toggle('open');  
 
         // Home
         if (e.target.id === 'homeBtnImg') scrollIntoViewWithOffset('.header-container');
@@ -164,9 +164,13 @@ const NavBar = () => {
 
     // Displays dropdown menu on devices < 500px wide
     const displayOptions = () => {
-        // Get options menu div
-        const optionsMenu = document.querySelector('.navbar-condensed-dropdown');
-        optionsMenu.classList.toggle('open');
+       
+        // Get the base options menu div
+        const optionsMenu = document.querySelector('.navbar-condensed-dropdown');        
+
+        // If the options menu exists, toggle the open class
+        if(optionsMenu) optionsMenu.classList.toggle('open');
+        
     }
 
     return (

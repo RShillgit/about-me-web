@@ -126,7 +126,16 @@
     background-color: #E8E6E1;
     border-radius: 0 0 2vw 2vw;
     right: 0;
+    z-index: 1;
+    animation: forwards 0.1s slideleft;
 }
+@keyframes slideleft {
+    0% {right: -200px}
+    25% {right: -100px}
+    50% {right: 0}
+    100% {right: 0}
+}
+
 .navbar-links.condensed .navbar-condensed-dropdown.open .navbar-individual-link button {
     font-size: 10vw;
     margin-right: 2vw;
