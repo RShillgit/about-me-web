@@ -58,6 +58,22 @@ const About = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="about-section">
+                <div className='about-section-title'>
+                    <h2>My Skills</h2>
+                </div>
+
+                <div className='about-section-content'>
+                    <div className="about-skills">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt='HTML5'/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt='CSS3'/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt='JavaScript'/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt='React'/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" alt='Python'/>
+                    </div>
+                </div>
+            </div>
             
         </div>
     )

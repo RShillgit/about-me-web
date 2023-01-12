@@ -22,6 +22,8 @@ const Contact = () => {
 
             <div className="contact-extrainfo">
                 <p>You can send me a message here or email me directly at Robert.Siciliano22@gmail.com</p>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt='Linkedin'/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt='Github'/>
             </div>
 
         </div>
