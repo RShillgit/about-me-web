@@ -1,0 +1,28 @@
+.footer-content img {
+    width: 24px;
+}
+
+.wave {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50vh;
+}
+.wave .shape-fill {
+    fill: #37474F;
+}
+
+/* Dark Mode */
+body.dark .wave .shape-fill {
+    fill: #263238;
+}

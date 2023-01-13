@@ -12,7 +12,7 @@
 }
 .about-section-title {
     display: flex;
-    color: #2196F3;
+    color: #1434A4;
     justify-content: center;
 }
 .about-skills {
@@ -43,4 +43,9 @@
     .about-skills img {
         width: 15vw;
     }
+}
+
+/* Dark Mode */
+body.dark .about-section-title {
+    color: #7DF9FF;
 }

@@ -3,6 +3,9 @@
     flex-direction: column;
     align-items: center;
 }
+.contact-title h3 {
+    color: #1434A4;
+}
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -11,11 +14,32 @@
     width: 50vw;
     height: 5rem;
     margin-bottom: 1rem;
+    border-radius: 1vw;
+    padding: 1vw;
+
+    background-color: #E7E7E7E7;
+    border: 2px solid #DEE4E7;
+}
+
+.contact-form textarea:focus {
+    outline: none;
+    border: 2px solid #37474F;
 }
 .contact-form button {
     align-self: center;
     width: 10vw;
 }
-.contact-extrainfo img {
-    width: 24px;
+
+/* Dark Mode */
+body.dark .contact-title h3 {
+    color: #7DF9FF;
+}
+body.dark .contact-form textarea {
+    background-color: #37474F;
+    color: #DEE4E7;
+    border: 2px solid #37474F;
+}
+body.dark .contact-form textarea:focus {
+    outline: none;
+    border: 2px solid #DEE4E7;
 }

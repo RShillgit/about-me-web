@@ -16,9 +16,14 @@
     background-color: #E7E7E7E7;
     box-shadow: -0.5vw 0.5vw 0.5vw #37474F;
 }
-.project-title h3 {
-    color: #2196F3;
+.project-title h3 a {
+    text-decoration: none;
+    color: #1434A4;
 }
+.project-title h3 a:hover {
+    text-shadow: 0 0 2rem #1434A4;
+}
+
 .project-demo video {
     border-radius: 1vw;
 }
@@ -45,4 +50,10 @@ body.dark .project-example {
     background-color: #37474F;
     box-shadow: -0.5vw 0.5vw 0.5vw #263238;
     color: #F7F7F7;
+}
+body.dark .project-title h3 a {
+    color: #7DF9FF;
+}
+body.dark .project-title h3 a:hover {
+    text-shadow: 0 0 2rem #7DF9FF;
 }

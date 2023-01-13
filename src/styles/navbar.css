@@ -59,7 +59,7 @@
 }
 .light-dark-mode .toggle-slider {
     position: absolute;
-    background-color: #2196F3;
+    background-color: #1434A4;
     width: 22px;
     height: 22px;
     border-radius: 22px;
@@ -90,13 +90,13 @@
 }
 #navbar-resume {
     font-size: 2vh;
-    color: #2196F3;
+    color: #1434A4;
 }
 #homeBtn {
     padding: 0;
 }
 #homeBtnImg {
-    filter: invert(47%) sepia(99%) saturate(1856%) hue-rotate(184deg) brightness(97%) contrast(96%);
+    filter: invert(13%) sepia(95%) saturate(3077%) hue-rotate(227deg) brightness(94%) contrast(98%);
 }
 
 /* Condensed Navbar */
@@ -160,6 +160,9 @@ body.dark .navbar, body.dark .navbar .light-dark-label {
 body.dark .navbar {
     box-shadow: 0px 2px 2px #37474F;
 }
+body.dark #homeBtnImg {
+    filter: invert(80%) sepia(34%) saturate(699%) hue-rotate(154deg) brightness(107%) contrast(102%);
+}
 body.dark .navbar button {
     color: #F7F7F7;
 }
@@ -168,7 +171,10 @@ body.dark .navbar .light-dark-label {
     border: 2px solid #F7F7F7;
 }
 body.dark .navbar .toggle-slider {
-    background-color: #2196F3;
+    background-color: #7DF9FF;
+}
+body.dark #navbar-resume {
+    color: #7DF9FF;
 }
 body.dark #optionsMenu {
     filter: invert(100%) sepia(0%) saturate(5014%) hue-rotate(179deg) brightness(113%) contrast(94%);
