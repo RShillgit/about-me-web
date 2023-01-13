@@ -1,12 +1,51 @@
 import '../styles/footer.css';
+import email from '../images/email-outline.png';
 
 const Footer = () => {
+
+    const revealEmail = () => {
+
+        // Get email text div
+        const emailAddress = document.querySelector('.footer-revealedText');
+
+        // If it has the hide class, remove it
+        if(emailAddress.classList.contains('hide')) emailAddress.classList.toggle('hide');
+
+        // Add reveal class to show animation
+        emailAddress.classList.toggle('reveal');
+    }
+
+    const hideEmail = () => {
+
+        // Get email text
+        const emailAddress = document.querySelector('.footer-revealedText');
+
+        // Remove reveal class
+        emailAddress.classList.toggle('reveal');
+
+        // Add hide class to show animation
+        emailAddress.classList.toggle('hide');
+    }
+
     return (
         <div className="footer-container">
 
             <div className="footer-content">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt='Linkedin'/>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt='Github'/>
+                <a href='https://www.linkedin.com/in/robert-siciliano-120379240/'>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt='Linkedin'/>
+                </a>
+                <a href='https://github.com/RShillgit'>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt='Github' id='github'/>
+                </a>
+                
+                <div className='footer-email-content'>
+                    <img src={email} id='email' alt='Email' onMouseEnter={revealEmail} onMouseLeave={hideEmail}/>
+                    
+                    <div className='footer-revealedText'> 
+                        <span id='emailAddress'>Robert.Siciliano22@gmail.com</span>
+                    </div>
+                </div> 
+
             </div>
 
             <div className="wave">

@@ -3,10 +3,46 @@
 }
 .footer-content {
     display: flex;
+    height: 50px;
     justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
 }
 .footer-content img {
-    width: 24px;
+    width: 30px;
+}
+.footer-content img:hover {
+    cursor: pointer;
+}
+.footer-email-content {
+    display: flex;
+    gap: 0.5em;
+    padding: 1rem;
+    width: 25vw;
+}
+.footer-revealedText {
+    display: inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+}
+.footer-revealedText.reveal {
+    animation: slideRight 1s forwards;
+}
+.footer-revealedText.hide {
+    opacity: 0;
+}
+@keyframes slideRight {
+    0% { margin-left:-50px; }
+    20% { margin-left:0px; }
+    35% { margin-left:10px; }
+    50% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+
+.footer-content #github, .footer-content #email {
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(41deg) brightness(106%) contrast(101%);
 }
 .wave {
     z-index: -1;
@@ -31,4 +67,7 @@
 /* Dark Mode */
 body.dark .wave .shape-fill {
     fill: #7DF9FF;
+}
+body.dark .footer-content #github, body.dark .footer-content #email {
+    filter: none;
 }

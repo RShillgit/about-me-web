@@ -43,16 +43,12 @@ const Contact = () => {
             </div>
 
             <form className="contact-form">
-                <textarea onChange={handleTextAreaChange} placeholder="Leave A Message" />
+                <textarea onChange={handleTextAreaChange} placeholder="Leave me a meessage"/>
                 <div className='sendMessageDiv'>
                     <button id='sendMessageBtn' onClick={sendMessage}>Message</button>
                 </div>
             </form>
-
-            <div className="contact-extrainfo">
-                <p>You can send me a message here or email me directly at Robert.Siciliano22@gmail.com</p>
-            </div>
-
+            
         </div>
     )
 }
