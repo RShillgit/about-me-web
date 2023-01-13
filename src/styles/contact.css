@@ -25,9 +25,28 @@
     outline: none;
     border: 2px solid #37474F;
 }
-.contact-form button {
+.contact-form .sendMessageDiv {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+.contact-form .sendMessageDiv button {
     align-self: center;
-    width: 10vw;
+    width: 100px;
+    height: 25px;
+    background-color: #DEE4E7;
+    color: #1434A4;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    box-shadow: -5px 5px 5px #263238;
+}
+.contact-form .sendMessageDiv button:disabled {
+    color: #222222;
+}
+.contact-form .sendMessageDiv button:enabled:active {
+    box-shadow: none;
+    transform: translate(-5px, 5px);
 }
 
 /* Dark Mode */
@@ -42,4 +61,12 @@ body.dark .contact-form textarea {
 body.dark .contact-form textarea:focus {
     outline: none;
     border: 2px solid #DEE4E7;
+}
+body.dark .contact-form .sendMessageDiv button {
+    background-color: #37474F;
+    box-shadow: -5px 5px 5px #263238;
+    color: #7DF9FF;
+}
+body.dark .contact-form .sendMessageDiv button:disabled {
+    color: #F7F7F7;
 }

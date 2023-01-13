@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import '../styles/contact.css';
 
 /*
@@ -8,6 +9,32 @@ import '../styles/contact.css';
 */
 
 const Contact = () => {
+
+    const [messageText, setMessageText] = useState('');
+
+    // Disable/Enable message button
+    useEffect(() => {
+
+        const sendMessageBtn = document.getElementById('sendMessageBtn');
+        
+        // If there is no message, disable send button
+        if (messageText.length === 0) sendMessageBtn.disabled = true;
+        
+        // If there is a message, enable send button
+        else if (messageText.length > 0) sendMessageBtn.disabled = false;
+
+    }, [messageText]);
+
+    const handleTextAreaChange = (e) => {
+        e.preventDefault();
+        setMessageText(e.target.value);
+    }
+
+    const sendMessage = (e) => {
+        e.preventDefault();
+        console.log(messageText);
+    }
+
     return (
         <div className="contact-container">
 
@@ -16,8 +43,10 @@ const Contact = () => {
             </div>
 
             <form className="contact-form">
-                <textarea placeholder="Leave A Message"></textarea>
-                <button>Message</button>
+                <textarea onChange={handleTextAreaChange} placeholder="Leave A Message" />
+                <div className='sendMessageDiv'>
+                    <button id='sendMessageBtn' onClick={sendMessage}>Message</button>
+                </div>
             </form>
 
             <div className="contact-extrainfo">

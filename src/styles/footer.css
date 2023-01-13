@@ -1,7 +1,13 @@
+.footer-container {
+    padding-bottom: 1rem;
+}
+.footer-content {
+    display: flex;
+    justify-content: center;
+}
 .footer-content img {
     width: 24px;
 }
-
 .wave {
     z-index: -1;
     position: absolute;
@@ -16,13 +22,13 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 50vh;
+    height: 30vh;
 }
 .wave .shape-fill {
-    fill: #37474F;
+    fill: #1434A4;
 }
 
 /* Dark Mode */
 body.dark .wave .shape-fill {
-    fill: #263238;
+    fill: #7DF9FF;
 }
