@@ -7,8 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50rem;
-    width: 66.6vw;
+    padding: 0 1vw 1vw 1vw;
     border-radius: 1vw;
     background-color: #E7E7E7E7;
     box-shadow: -0.5vw 0.5vw 0.5vw #37474F;
@@ -16,6 +15,21 @@
 .project-title h3 {
     color: #2196F3;
 }
+#phototagDemo {
+    width: 40vw;
+}
+#battleshipDemo {
+    width: 40vw;
+}
+#todolistDemo {
+    width: 40vw;
+}
+
+/* 
+    TODO: Make project layout a 3 column grid on wide screens and a 1 column grid 
+    on small screens 
+*/
+
 
 /* Dark Mode */
 body.dark .project-example {
