@@ -16,22 +16,6 @@ const Projects = () => {
 
             <div className='project-example'>
                 <div className='project-title'>
-                    <h3>Photo Tag</h3>
-                </div>
-                <div className='project-demo'>
-                    <video autoPlay loop muted id='phototagDemo'>
-                        <source src={phototagDemo} type="video/mp4" />
-                        <source src="movie.ogg" type="video/ogg" />
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div className='project-description'>
-                    <p>This project was created with...</p>
-                </div>
-            </div>
-
-            <div className='project-example'>
-                <div className='project-title'>
                     <h3>Battleship</h3>
                 </div>
                 <div className='project-demo'>
@@ -53,6 +37,22 @@ const Projects = () => {
                 <div className='project-demo'>
                     <video autoPlay loop muted id='todolistDemo'>
                         <source src={todolistDemo} type="video/mp4" />
+                        <source src="movie.ogg" type="video/ogg" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div className='project-description'>
+                    <p>This project was created with...</p>
+                </div>
+            </div>
+
+            <div className='project-example'>
+                <div className='project-title'>
+                    <h3>Photo Tag</h3>
+                </div>
+                <div className='project-demo'>
+                    <video autoPlay loop muted id='phototagDemo'>
+                        <source src={phototagDemo} type="video/mp4" />
                         <source src="movie.ogg" type="video/ogg" />
                         Your browser does not support the video tag.
                     </video>

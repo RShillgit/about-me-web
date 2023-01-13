@@ -1,10 +1,14 @@
 .projects-container {
     display: flex;
-    flex-direction: column;
+    flex-flow: wrap;
     align-items: center;
+    justify-content: space-evenly;
+    gap: 1vw;
 }
 .project-example {
+    width: 45vw;
     display: flex;
+    flex-shrink: 1;
     flex-direction: column;
     align-items: center;
     padding: 0 1vw 1vw 1vw;
@@ -15,20 +19,25 @@
 .project-title h3 {
     color: #2196F3;
 }
-#phototagDemo {
-    width: 40vw;
-}
-#battleshipDemo {
-    width: 40vw;
-}
-#todolistDemo {
-    width: 40vw;
+.project-demo video {
+    border-radius: 1vw;
 }
 
-/* 
-    TODO: Make project layout a 3 column grid on wide screens and a 1 column grid 
-    on small screens 
-*/
+@media (min-width: 1000px) {
+    .project-demo video {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 999px) {
+    .project-example {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    video {
+        width: 80vw;
+    }
+}
 
 
 /* Dark Mode */
