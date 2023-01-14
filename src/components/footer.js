@@ -1,5 +1,5 @@
 import '../styles/footer.css';
-import email from '../images/email-outline.png';
+import gmail from '../images/gmail.png';
 
 const Footer = () => {
 
@@ -8,11 +8,13 @@ const Footer = () => {
         // Get email text div
         const emailAddress = document.querySelector('.footer-revealedText');
 
+        const emailContent = document.querySelector('.footer-email-content');
+
         // If it has the hide class, remove it
-        if(emailAddress.classList.contains('hide')) emailAddress.classList.toggle('hide');
+        if(emailContent.classList.contains('hide')) emailContent.classList.toggle('hide');
 
         // Add reveal class to show animation
-        emailAddress.classList.toggle('reveal');
+        emailContent.classList.toggle('reveal');
     }
 
     const hideEmail = () => {
@@ -20,11 +22,13 @@ const Footer = () => {
         // Get email text
         const emailAddress = document.querySelector('.footer-revealedText');
 
+        const emailContent = document.querySelector('.footer-email-content');
+
         // Remove reveal class
-        emailAddress.classList.toggle('reveal');
+        emailContent.classList.toggle('reveal');
 
         // Add hide class to show animation
-        emailAddress.classList.toggle('hide');
+        emailContent.classList.toggle('hide');
     }
 
     return (
@@ -39,8 +43,8 @@ const Footer = () => {
                 </a>
                 
                 <div className='footer-email-content'>
-                    <img src={email} id='email' alt='Email' onMouseEnter={revealEmail} onMouseLeave={hideEmail}/>
-                    
+                    <img src={gmail} id='email' alt='Email' onMouseEnter={revealEmail} onMouseLeave={hideEmail}/>
+
                     <div className='footer-revealedText'> 
                         <span id='emailAddress'>Robert.Siciliano22@gmail.com</span>
                     </div>
