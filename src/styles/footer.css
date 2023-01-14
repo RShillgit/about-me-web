@@ -15,6 +15,7 @@
 }
 .footer-content img:hover {
     cursor: pointer;
+    transform: scale(1.2);
 }
 .footer-email-content {
     font-weight: 600;
