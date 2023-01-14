@@ -82,6 +82,29 @@ body.dark .footer-content #github {
     filter: invert(13%) sepia(18%) saturate(0%) hue-rotate(211deg) brightness(101%) contrast(101%);
 }
 
-@media (max-width: 601px) {
-    /* Change how email slides out */
+/* Changes how email slides out */
+@media (max-width: 801px) {
+    .footer-content {
+        align-items: baseline;
+    }
+    .footer-email-content {
+        flex-direction: column;
+    }
+    .footer-revealedText {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        bottom: 5px;
+        right: 0; 
+        width: 100vw
+    }
+    .footer-email-content.reveal .footer-revealedText {
+        animation: condensedSlideRight 0.5s forwards;
+    }
+    @keyframes condensedSlideRight {
+        0% { right: 20vw; }
+        20% { right: 10vw; }
+        35% { right: 0; }
+        100% { right: 0; }
+    }
 }

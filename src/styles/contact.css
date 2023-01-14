@@ -44,6 +44,9 @@
 .contact-form .sendMessageDiv button:disabled {
     color: #222222;
 }
+.contact-form .sendMessageDiv button:enabled:hover {
+    cursor: pointer;
+}
 .contact-form .sendMessageDiv button:enabled:active {
     box-shadow: none;
     transform: translate(-5px, 5px);

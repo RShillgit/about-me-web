@@ -42,7 +42,7 @@ const Footer = () => {
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt='Github' id='github'/>
                 </a>
                 
-                <div className='footer-email-content'>
+                <div className='footer-email-content hide'>
                     <img src={gmail} id='email' alt='Email' onMouseEnter={revealEmail} onMouseLeave={hideEmail}/>
 
                     <div className='footer-revealedText'> 
