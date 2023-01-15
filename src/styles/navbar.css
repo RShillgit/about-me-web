@@ -162,7 +162,7 @@ body.dark .navbar {
     box-shadow: 0px 2px 2px #37474F;
 }
 body.dark #homeBtnImg {
-    filter: invert(80%) sepia(34%) saturate(699%) hue-rotate(154deg) brightness(107%) contrast(102%);
+    filter: invert(86%) sepia(17%) saturate(1183%) hue-rotate(143deg) brightness(102%) contrast(101%);
 }
 body.dark .navbar button {
     color: #F7F7F7;
