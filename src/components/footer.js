@@ -5,9 +5,6 @@ const Footer = () => {
 
     const revealEmail = () => {
 
-        // Get email text div
-        const emailAddress = document.querySelector('.footer-revealedText');
-
         const emailContent = document.querySelector('.footer-email-content');
 
         // If it has the hide class, remove it
@@ -18,9 +15,6 @@ const Footer = () => {
     }
 
     const hideEmail = () => {
-
-        // Get email text
-        const emailAddress = document.querySelector('.footer-revealedText');
 
         const emailContent = document.querySelector('.footer-email-content');
 
@@ -35,10 +29,10 @@ const Footer = () => {
         <div className="footer-container">
 
             <div className="footer-content">
-                <a href='https://www.linkedin.com/in/robert-siciliano-120379240/'>
+                <a href='https://www.linkedin.com/in/robert-siciliano-120379240/' target="_blank" rel="noopener noreferrer">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt='Linkedin'/>
                 </a>
-                <a href='https://github.com/RShillgit'>
+                <a href='https://github.com/RShillgit' target="_blank" rel="noopener noreferrer">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt='Github' id='github'/>
                 </a>
                 
