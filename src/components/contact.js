@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import '../styles/contact.css';
+import $ from 'jquery';
 
 /*
     Add an animation after clicking submit button that closes the textarea,
@@ -32,8 +33,20 @@ const Contact = () => {
 
     const sendMessage = (e) => {
         e.preventDefault();
-        console.log(messageText);
+
+        $.ajax({
+            method: 'POST',
+            url: 'https://formsubmit.co/ajax/40d582f7bb072e4fd2d7517923fb5b8c',
+            dataType: 'json',
+            accepts: 'application/json',
+            data: {
+                message: messageText
+            },
+            success: (data) => console.log(data),
+            error: (err) => console.log(err)
+         });
     }
+
 
     return (
         <div className="contact-container">
@@ -42,10 +55,19 @@ const Contact = () => {
                 <h3>Contact Me</h3>
             </div>
 
-            <form className="contact-form">
-                <textarea onChange={handleTextAreaChange} placeholder="Leave me a meessage"/>
+            <form className="contact-form" action="https://formsubmit.co/40d582f7bb072e4fd2d7517923fb5b8c" method="POST">
+                
+                {/* Honeypot */}
+                <input type="text" name='_honey' style={{display: 'none'}}/>
+
+                {/* Disable Captcha */}
+                <input type='hidden' name='_captcha' value='false'/>
+
+                <input type="hidden" name="_next" value="localhost:3000"></input>
+
+                <textarea onChange={handleTextAreaChange} placeholder="Leave me a meessage" name='Message'/>
                 <div className='sendMessageDiv'>
-                    <button id='sendMessageBtn' onClick={sendMessage}>Message</button>
+                    <button type='submit' id='sendMessageBtn' onClick={sendMessage}>Message</button>
                 </div>
             </form>
             
