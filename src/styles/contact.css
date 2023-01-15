@@ -52,6 +52,35 @@
     transform: translate(-5px, 5px);
 }
 
+/* Message Sent Animation */
+.messageTextArea.sent {
+    animation: shrink 1s linear;
+}
+@keyframes shrink {
+    0% {width: 40vw;}
+    25% {width: 30vw;}
+    50% {width: 20vw;}
+    75%{width: 10vw;}
+    100%{width: 0vw; visibility: hidden; opacity: 0;}
+}
+.messageSentConfirmation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 5rem;
+    border: 2px solid #DEE4E7;
+    background-color: #E7E7E7E7;
+    padding: 1vw;
+    gap: 1vw;
+    margin-bottom: 1rem;
+    border-radius: 1vw;
+}
+.messageSentConfirmation img {
+    filter: invert(16%) sepia(35%) saturate(6634%) hue-rotate(226deg) brightness(87%) contrast(101%);
+}
+/**/
+
 /* Dark Mode */
 body.dark .contact-title h3 {
     color: #7DF9FF;
@@ -72,4 +101,29 @@ body.dark .contact-form .sendMessageDiv button {
 }
 body.dark .contact-form .sendMessageDiv button:disabled {
     color: #F7F7F7;
+}
+body.dark .messageSentConfirmation {
+    border: 2px solid #37474F;
+    background-color: #37474F;
+    color: #DEE4E7;
+}
+body.dark .messageSentConfirmation img {
+    filter: invert(83%) sepia(33%) saturate(952%) hue-rotate(160deg) brightness(108%) contrast(103%);
+}
+
+@media (max-width: 800px) {
+    .messageSentConfirmation {
+        font-size: 3vw;
+    }
+    .contact-form textarea, .messageSentConfirmation {
+        width: 70vw;
+    }
+}
+@media (max-width: 500px) {
+    .messageSentConfirmation {
+        font-size: 3vw;
+    }
+    .contact-form textarea, .messageSentConfirmation {
+        width: 80vw;
+    }
 }
