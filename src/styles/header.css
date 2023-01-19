@@ -17,8 +17,8 @@
     gap: 0.5em;
     padding: 1rem;
     border-radius: 0.5rem;
-    background-color: rgba(255, 255, 255, 0.7);
-    color: #121212;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #1134A6;
 }
 
 .header-displayedText, .header-revealedText {
@@ -71,4 +71,13 @@
     .header-content {
         gap: 0.3em;
     }
+}
+
+/* Dark Mode */
+body.dark .header-container {
+    box-shadow: 0px 2px 2px #37474F;
+}
+body.dark .header-content {
+    background-color: rgba(34, 34, 34, 0.8);
+    color: #7DF9FF;
 }

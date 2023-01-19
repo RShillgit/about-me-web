@@ -24,15 +24,6 @@ html, button, input {
 body.dark {
     background-color: #222222;
 }
-
-body.dark .header-container {
-    box-shadow: 0px 2px 2px #37474F;
-}
-body.dark .header-content {
-    background-color: #22222290;
-    color: #F7F7F7;
-}
-
 body.dark .about-container, body.dark .project-example {
     background-color: #37474F;
     box-shadow: -0.5vw 0.5vw 0.5vw #263238;

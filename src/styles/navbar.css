@@ -59,7 +59,7 @@
 }
 .light-dark-mode .toggle-slider {
     position: absolute;
-    background-color: #1434A4;
+    background-color: #1134A6;
     width: 22px;
     height: 22px;
     border-radius: 22px;
@@ -90,14 +90,14 @@
 }
 #navbar-resume {
     font-size: 2vh;
-    color: #1434A4;
+    color: #1134A6;
     font-weight: 600;
 }
 #homeBtn {
     padding: 0;
 }
 #homeBtnImg {
-    filter: invert(13%) sepia(95%) saturate(3077%) hue-rotate(227deg) brightness(94%) contrast(98%);
+    filter: invert(11%) sepia(91%) saturate(3845%) hue-rotate(229deg) brightness(97%) contrast(96%);
 }
 
 /* Condensed Navbar */

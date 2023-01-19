@@ -4,7 +4,7 @@
     align-items: center;
 }
 .contact-title h3 {
-    color: #1434A4;
+    color: #1134A6;
 }
 .contact-form {
     display: flex;
@@ -35,7 +35,7 @@
     width: 100px;
     height: 25px;
     background-color: #DEE4E7;
-    color: #1434A4;
+    color: #1134A6;
     font-weight: 600;
     border: none;
     border-radius: 8px;
@@ -73,6 +73,7 @@
     background-color: #E7E7E7E7;
     padding: 1vw;
     gap: 1vw;
+    color: #222222;
     margin-bottom: 1rem;
     border-radius: 1vw;
 }
