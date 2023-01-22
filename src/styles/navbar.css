@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     width: 100vw;
-    background-color: #DEE4E7;
+    background-color: #F7F7F7;
     height: 8vh;
     z-index: 1;
     box-shadow: 0px 2px 2px #222222;
@@ -14,9 +14,7 @@
     display: flex;
     align-items: center;
 }
-
 .left-links {
-    box-sizing: border-box;
     gap: 2vw;
 }
 
@@ -83,17 +81,18 @@
     border: none;
     background:none;
     margin: 0;
-    font-size: 2vh;
+    font-size: 3vw;
 }
 .navbar-clickable:hover {
     cursor: pointer;
 }
 #navbar-resume {
-    font-size: 2vh;
+    font-size: 3vw;
     color: #1134A6;
     font-weight: 600;
 }
 #homeBtn {
+    display: flex;
     padding: 0;
 }
 #homeBtnImg {
@@ -136,7 +135,6 @@
     50% {right: 0}
     100% {right: 0}
 }
-
 .navbar-links.condensed .navbar-condensed-dropdown.open .navbar-individual-link button {
     width: 100%;
     text-align: left;
@@ -150,8 +148,6 @@
     background-color: #E1E1E1E1;
 }
 /**/
-
-/* Navbar changes when height goes under 500px  */
 
 /* Dark Mode */
 body.dark .navbar, body.dark .navbar .light-dark-label {
@@ -188,3 +184,21 @@ body.dark .navbar-condensed-dropdown.open .navbar-individual-link:active {
     background-color: #263238;
 }
 /**/
+
+@media (min-width: 801px) {
+    .navbar-clickable, #navbar-resume {
+        font-size: 2.5vw;
+    }
+}
+@media (min-width: 1201px) {
+    .navbar-clickable, #navbar-resume {
+        font-size: 2vw;
+    }
+}
+@media (min-width: 1501px) {
+    .navbar-clickable, #navbar-resume {
+        font-size: 1.5vw;
+    }
+}
+
+/* TODO: Zooming Out Messes up navbar */

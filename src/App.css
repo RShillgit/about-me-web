@@ -9,7 +9,6 @@ body {
 html, button, input {
     font-family: Exo_2;
 }
-
 .about-container, .projects-container {
     margin: 0 1rem 1rem 1rem;
 }
