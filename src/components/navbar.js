@@ -131,7 +131,7 @@ const NavBar = () => {
         if (openOptionsMenu) openOptionsMenu.classList.toggle('open');  
 
         // Home
-        if (e.target.id === 'homeBtnImg') scrollIntoViewWithOffset('.header-container');
+        if (e.target.id === 'homeBtn' || e.target.id === 'homeBtnImg') scrollIntoViewWithOffset('.header-container');
 
         // About
         else if (e.target.innerHTML === 'About') { 
@@ -189,14 +189,14 @@ const NavBar = () => {
                     <img id='homeBtnImg' src={homeBtn} alt='Home' />
                 </button>  
 
-                <div className='light-dark-mode' onClick={lightDarkClickHandler}>
+                <button className='light-dark-mode' tabIndex='0'  onClick={lightDarkClickHandler}>
                     <input type="checkbox" id='light-dark-checkbox' disabled/>
                     <label htmlFor="light-dark-checkbox" className="light-dark-label">
                         <img src={moon} id='moon' alt='dark'/>
                         <img src={sun} id='sun' alt='light'/>
                         <div className='toggle-slider'/>
                     </label>
-                </div>
+                </button>
             </div>
 
             {navbarLinks}
