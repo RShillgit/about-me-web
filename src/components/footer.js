@@ -37,7 +37,7 @@ const Footer = () => {
                 </a>
                 
                 <div className='footer-email-content hide'>
-                    <img src={gmail} id='email' alt='Email' onMouseEnter={revealEmail} onMouseLeave={hideEmail}/>
+                    <img src={gmail} id='email' alt='Email' onMouseEnter={revealEmail} onMouseLeave={hideEmail} tabIndex='0'/>
 
                     <div className='footer-revealedText'> 
                         <span id='emailAddress'>Robert.Siciliano22@gmail.com</span>

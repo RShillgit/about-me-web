@@ -20,6 +20,8 @@
 
 /* Light/dark slider */
 .light-dark-mode {
+    border: none;
+    background: none;  
     display: flex;
     justify-content: center;
     align-items: center;
