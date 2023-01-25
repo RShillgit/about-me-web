@@ -5,6 +5,11 @@
 
 :root {
     --accent-color: #1134A6;
+    --base-color: #F7F7F7;
+    --main-color-1: #E7E7E7;
+    --main-color-2: #37474F;
+    --main-color-3: #263238;
+    --text-color: #222222;
 }
 
 body {
@@ -25,7 +30,11 @@ html, button, input {
 
 /* Dark Mode  #7DF9FF*/
 body.dark {
+    --base-color: #222222;
     --accent-color: #7DF9FF;
+    --main-color-1: #37474F;
+    --main-color-2: #263238;
+    --text-color: #F7F7F7;
     background-color: #222222;
 }
 body.dark .about-container, body.dark .project-example {

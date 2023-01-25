@@ -2,8 +2,8 @@
     margin-top: 1rem;
     padding: 1rem;
     border-radius: 1vw;
-    background-color: #E7E7E7E7;
-    box-shadow: -0.5vw 0.5vw 0.5vw #37474F;
+    background-color: var(--main-color-1);
+    box-shadow: -0.5vw 0.5vw 0.5vw var(--main-color-2);
 }
 .about-section-content {
     display: flex;

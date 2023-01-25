@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0px 2px 2px #222222;
+    box-shadow: 0px 2px 2px var(--main-color-2);
 }
 .headerImg img {
     display: flex;
@@ -72,9 +72,6 @@
 }
 
 /* Dark Mode */
-body.dark .header-container {
-    box-shadow: 0px 2px 2px #37474F;
-}
 body.dark .header-content {
     background-color: rgba(34, 34, 34, 0.8);
     
