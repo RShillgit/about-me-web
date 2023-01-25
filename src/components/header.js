@@ -22,7 +22,7 @@ const Header = () => {
             <div className="header-content">
                 <div className='header-displayedText'>Robert Siciliano</div> 
                 <div className='header-revealedText'> 
-                    <span> | Aspiring Web Developer</span>
+                    <span>Aspiring Web Developer</span>
                 </div>
             </div>
 

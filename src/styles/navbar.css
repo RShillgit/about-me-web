@@ -203,4 +203,9 @@ body.dark .navbar-condensed-dropdown.open .navbar-individual-link:active {
     }
 }
 
-/* TODO: Zooming Out Messes up navbar */
+/* Portrait Mode */
+@media (max-height: 500px) {
+    .navbar {
+        height: 50px;
+    }
+}
