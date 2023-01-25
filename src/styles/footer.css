@@ -69,13 +69,10 @@
     height: 30vh;
 }
 .wave .shape-fill {
-    fill: #1134A6;
+    fill: var(--accent-color);
 }
 
 /* Dark Mode */
-body.dark .wave .shape-fill {
-    fill: #7DF9FF;
-}
 body.dark .footer-revealedText span {
     color: #222222;
 }

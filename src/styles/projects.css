@@ -18,10 +18,10 @@
 }
 .project-title h3 a {
     text-decoration: none;
-    color: #1134A6;
+    color: var(--accent-color);
 }
 .project-title h3 a:hover {
-    text-shadow: 0 0 2rem #1134A6;
+    text-shadow: 0 0 2rem var(--accent-color);
 }
 
 .project-demo video {
@@ -50,10 +50,4 @@ body.dark .project-example {
     background-color: #37474F;
     box-shadow: -0.5vw 0.5vw 0.5vw #263238;
     color: #F7F7F7;
-}
-body.dark .project-title h3 a {
-    color: #7DF9FF;
-}
-body.dark .project-title h3 a:hover {
-    text-shadow: 0 0 2rem #7DF9FF;
 }

@@ -3,6 +3,10 @@
     src: url('./fonts/Exo_2/Exo2-VariableFont_wght.ttf');
 }
 
+:root {
+    --accent-color: #1134A6;
+}
+
 body {
     margin: 0;
 }
@@ -21,6 +25,7 @@ html, button, input {
 
 /* Dark Mode  #7DF9FF*/
 body.dark {
+    --accent-color: #7DF9FF;
     background-color: #222222;
 }
 body.dark .about-container, body.dark .project-example {
