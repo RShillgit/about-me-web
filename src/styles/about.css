@@ -20,7 +20,9 @@
     flex-shrink: 0;
 }
 .about-skills img {
-    width: 50px;
+    
+    width: 15vw;
+    max-width: 100px;
 }
 #edu h2 {
     margin-top: 0;
@@ -30,17 +32,4 @@
 }
 .about-goals ul {
     margin-top: 0;
-}
-
-@media (min-width: 800px) {
-    .about-skills img {
-        width: 8vw;
-        max-width: 100px;
-    }
-}
-
-@media (max-width: 320px) {
-    .about-skills img {
-        width: 15vw;
-    }
 }
