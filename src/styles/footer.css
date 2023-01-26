@@ -10,7 +10,7 @@
     gap: 1rem;
 }
 .footer-content img, #email {
-    width: 30px;
+    width: 35px;
     z-index: 1;
 }
 .footer-content img:hover {
@@ -78,7 +78,10 @@ body.dark .footer-content #github {
 }
 
 /* Changes how email slides out */
-@media (max-width: 801px) {
+@media (max-width: 850px) {
+    .footer-container {
+        padding-bottom: 2rem;
+    }
     .footer-content {
         align-items: baseline;
     }

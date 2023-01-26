@@ -39,6 +39,7 @@
     border: none;
     border-radius: 8px;
     box-shadow: -5px 5px 5px #263238;
+    font-size: medium;
 }
 .contact-form .sendMessageDiv button:disabled {
     color: #222222;
