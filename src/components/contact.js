@@ -44,6 +44,9 @@ const Contact = () => {
             data: {
                 message: messageText
             },
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest',
+            },  
             // If email is successful, 
             success: () => {
                 messageSentAnimation();
