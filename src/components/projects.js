@@ -9,9 +9,7 @@ const Projects = () => {
 
             <div className='project-example'>
                 <div className='project-title'>
-                    <h3>
-                        <a href='https://github.com/RShillgit/Battleship'>Battleship</a>
-                    </h3>
+                    <h3>Battleship</h3>
                 </div>
                 <div className='project-demo'>
                     <video autoPlay loop muted id='battleshipDemo'>
@@ -21,16 +19,15 @@ const Projects = () => {
                     </video>
                 </div>
                 <div className='project-description'>
-                    <p>This project was created with...</p>
+                    <p>View <a href='https://github.com/RShillgit/Battleship' target="_blank" rel="noopener noreferrer">repository</a></p>
+                    <p>Try it out <a href='https://rshillgit.github.io/Battleship/' target="_blank" rel="noopener noreferrer">live</a></p>
                     
                 </div>
             </div>
 
             <div className='project-example'>
                 <div className='project-title'>
-                    <h3>
-                        <a href='https://github.com/RShillgit/Todo-List'>Todo List</a>
-                    </h3>
+                    <h3>Todo List</h3>
                 </div>
                 <div className='project-demo'>
                     <video autoPlay loop muted id='todolistDemo'>
@@ -40,15 +37,14 @@ const Projects = () => {
                     </video>
                 </div>
                 <div className='project-description'>
-                    <p>This project was created with...</p>
+                    <p>View <a href='https://github.com/RShillgit/Todo-List' target="_blank" rel="noopener noreferrer">repository</a></p>
+                    <p>Try it out <a href='https://rshillgit.github.io/Todo-List/' target="_blank" rel="noopener noreferrer">live</a></p>
                 </div>
             </div>
 
             <div className='project-example'>
                 <div className='project-title'>
-                    <h3>
-                        <a href='https://github.com/RShillgit/photo-tag'>Photo Tag</a>
-                    </h3>
+                    <h3>Photo Tag</h3>
                 </div>
                 <div className='project-demo'>
                     <video autoPlay loop muted id='phototagDemo'>
@@ -58,7 +54,8 @@ const Projects = () => {
                     </video>
                 </div>
                 <div className='project-description'>
-                    <p>This project was created with...</p>
+                    <p>View <a href='https://github.com/RShillgit/photo-tag' target="_blank" rel="noopener noreferrer">repository</a></p>
+                    <p>Try it out <a href='https://rshillgit.github.io/photo-tag/' target="_blank" rel="noopener noreferrer">live</a></p>
                 </div>
             </div>
 

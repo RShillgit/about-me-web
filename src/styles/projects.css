@@ -17,11 +17,14 @@
     box-shadow: -0.5vw 0.5vw 0.5vw var(--main-color-2);
     color: var(--text-color);
 }
-.project-title h3 a {
+.project-title h3 {
+    color: var(--accent-color);
+}
+.project-description p a {
     text-decoration: none;
     color: var(--accent-color);
 }
-.project-title h3 a:hover {
+.project-description p a:hover {
     text-shadow: 0 0 2rem var(--accent-color);
 }
 
