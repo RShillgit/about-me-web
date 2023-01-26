@@ -28,7 +28,7 @@
     align-items: center;
 }
 .footer-revealedText span {
-    color: white;
+    color: var(--base-color);
 }
 .footer-email-content.reveal .footer-revealedText {
     animation: slideRight 1s forwards;
@@ -73,9 +73,6 @@
 }
 
 /* Dark Mode */
-body.dark .footer-revealedText span {
-    color: #222222;
-}
 body.dark .footer-content #github {
     filter: invert(13%) sepia(18%) saturate(0%) hue-rotate(211deg) brightness(101%) contrast(101%);
 }
