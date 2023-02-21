@@ -7,22 +7,9 @@ const Footer = () => {
 
         const emailContent = document.querySelector('.footer-email-content');
 
-        // If it has the hide class, remove it
-        if(emailContent.classList.contains('hide')) emailContent.classList.toggle('hide');
-
-        // Add reveal class to show animation
-        emailContent.classList.toggle('reveal');
-    }
-
-    const hideEmail = () => {
-
-        const emailContent = document.querySelector('.footer-email-content');
-
-        // Remove reveal class
-        emailContent.classList.toggle('reveal');
-
-        // Add hide class to show animation
         emailContent.classList.toggle('hide');
+        emailContent.classList.toggle('reveal');
+       
     }
 
     return (
@@ -37,7 +24,7 @@ const Footer = () => {
                 </a>
                 
                 <div className='footer-email-content hide'>
-                    <img src={gmail} id='email' alt='Email' onMouseEnter={revealEmail} onMouseLeave={hideEmail} tabIndex='0'/>
+                    <img src={gmail} id='email' alt='Email' onClick={revealEmail} tabIndex='0'/>
 
                     <div className='footer-revealedText'> 
                         <span id='emailAddress'>Robert.Siciliano22@gmail.com</span>
