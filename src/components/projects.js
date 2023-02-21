@@ -18,11 +18,22 @@ const Projects = () => {
                         Your browser does not support the video tag.
                     </video>
                 </div>
+
                 <div className='project-description'>
-                    <p>View <a href='https://github.com/RShillgit/Battleship' target="_blank" rel="noopener noreferrer">repository</a></p>
-                    <p>Try it out <a href='https://rshillgit.github.io/Battleship/' target="_blank" rel="noopener noreferrer">live</a></p>
-                    
+                    <button className='project-tech-stack' disabled={true}>JavaScript</button>
+                    <button className='project-tech-stack' disabled={true}>HTML</button>
+                    <button className='project-tech-stack' disabled={true}>CSS</button>
                 </div>
+
+                <div className='project-buttons'>
+                    <a href='https://github.com/RShillgit/Battleship' target="_blank" rel="noopener noreferrer">
+                        <button>Repo</button>
+                    </a>
+                    <a href='https://rshillgit.github.io/Battleship/' target="_blank" rel="noopener noreferrer">
+                        <button>Demo</button>
+                    </a>
+                </div>
+
             </div>
 
             <div className='project-example'>
@@ -36,10 +47,22 @@ const Projects = () => {
                         Your browser does not support the video tag.
                     </video>
                 </div>
+
                 <div className='project-description'>
-                    <p>View <a href='https://github.com/RShillgit/Todo-List' target="_blank" rel="noopener noreferrer">repository</a></p>
-                    <p>Try it out <a href='https://rshillgit.github.io/Todo-List/' target="_blank" rel="noopener noreferrer">live</a></p>
+                    <button className='project-tech-stack' disabled={true}>JavaScript</button>
+                    <button className='project-tech-stack' disabled={true}>HTML</button>
+                    <button className='project-tech-stack' disabled={true}>CSS</button>
                 </div>
+
+                <div className='project-buttons'>
+                    <a href='https://github.com/RShillgit/Todo-List' target="_blank" rel="noopener noreferrer">
+                        <button>Repo</button>
+                    </a>
+                    <a href='https://rshillgit.github.io/Todo-List/' target="_blank" rel="noopener noreferrer">
+                        <button>Demo</button>
+                    </a>
+                </div>
+
             </div>
 
             <div className='project-example'>
@@ -54,9 +77,20 @@ const Projects = () => {
                     </video>
                 </div>
                 <div className='project-description'>
-                    <p>View <a href='https://github.com/RShillgit/photo-tag' target="_blank" rel="noopener noreferrer">repository</a></p>
-                    <p>Try it out <a href='https://rshillgit.github.io/photo-tag/' target="_blank" rel="noopener noreferrer">live</a></p>
+                    <button className='project-tech-stack' disabled={true}>React</button>
+                    <button className='project-tech-stack' disabled={true}>CSS</button>
+                    <button className='project-tech-stack' disabled={true}>Firebase</button>
                 </div>
+
+                <div className='project-buttons'>
+                    <a href='https://github.com/RShillgit/photo-tag' target="_blank" rel="noopener noreferrer">
+                        <button>Repo</button>
+                    </a>
+                    <a href='https://rshillgit.github.io/photo-tag/' target="_blank" rel="noopener noreferrer">
+                        <button>Demo</button>
+                    </a>
+                </div>
+
             </div>
 
         </div>

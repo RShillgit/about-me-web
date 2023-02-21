@@ -3,7 +3,7 @@
     align-self: baseline;
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     background-color: var(--base-color);
     height: 8vh;
     z-index: 1;

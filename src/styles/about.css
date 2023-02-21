@@ -1,7 +1,7 @@
 .about-container {
     margin-top: 1rem;
     padding: 1rem;
-    border-radius: 1vw;
+    border-radius: 0.5rem;
     background-color: var(--main-color-1);
     box-shadow: -0.5vw 0.5vw 0.5vw var(--main-color-2);
 }

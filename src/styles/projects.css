@@ -12,24 +12,46 @@
     flex-direction: column;
     align-items: center;
     padding: 0 1vw 1vw 1vw;
-    border-radius: 1vw;
+    border-radius: 0.5rem;
     background-color: var(--main-color-1);
     box-shadow: -0.5vw 0.5vw 0.5vw var(--main-color-2);
     color: var(--text-color);
 }
+.project-demo video {
+    border-radius: 0.5rem;
+}
 .project-title h3 {
     color: var(--accent-color);
 }
-.project-description p a {
-    text-decoration: none;
-    color: var(--accent-color);
+.project-description {
+    display: flex;
+    gap: 3vw;
+    padding: 1vw;
 }
-.project-description p a:hover {
-    text-shadow: 0 0 2rem var(--accent-color);
+.project-description .project-tech-stack, .project-buttons a button {
+    border-radius: 0.5rem;
+    padding: 8px;
+    font-size: x-large;
+    box-shadow: -0.5vw 0.5vw 0.5vw var(--main-color-2);
+    border: none;
 }
-
-.project-demo video {
-    border-radius: 1vw;
+.project-description .project-tech-stack {
+    background-color: var(--base-color);
+    color: var(--text-color);
+}
+.project-buttons {
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+.project-buttons a button {
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--base-color);
+}
+.project-buttons a button:hover {
+    transform: scale(1.2);
 }
 
 @media (min-width: 1000px) {
