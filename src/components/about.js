@@ -37,8 +37,8 @@ const About = () => {
                                     <li> The picture depicted above was captured during the early stages of the race</li>
                                 </ul>
                             </li>
-                            <li>Wrestling - I wrestled in high school and now I coach at my high school and middle school</li>
-                            <li>Watching UFC and college wrestling</li>
+                            <li>Wrestling - I wrestled in high school and returned to coach at both my high school and middle school</li>
+                            <li>Watching the UFC and college wrestling</li>
                         </ul>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ const About = () => {
                 <div className='about-section-content'>
                     <div className="about-goals">
                         <ul>
-                            <li>Getting a job as a software engineer</li>
+                            <li>Improving as a software engineer</li>
                             <li>Running a sub 3:15:00 marathon</li>
                         </ul>
                     </div>
@@ -66,11 +66,13 @@ const About = () => {
 
                 <div className='about-section-content'>
                     <div className="about-skills">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt='HTML5'/>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt='CSS3'/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt='Node.js'/>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt='JavaScript'/>
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt='React'/>
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" alt='Python'/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt='CSS3'/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt='HTML5'/>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" alt='MongoDB'/>
+
                     </div>
                 </div>
             </div>
