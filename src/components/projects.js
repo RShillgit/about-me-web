@@ -1,11 +1,44 @@
 import '../styles/projects.css';
 import battleshipDemo from '../videos/Battleship Demo.mp4';
 import phototagDemo from '../videos/Photo Tag Demo.mp4';
-import todolistDemo from '../videos/Todo List Demo.mp4';
+import membersOnlyDemo from '../videos/Members Only Demo.mp4';
 
 const Projects = () => {
     return (
         <div className="projects-container">
+
+            <div className='project-example'>
+
+                <div className='project-title'>
+                    <h3>Members Only</h3>
+                </div>
+                <div className='project-demo'>
+                    <video autoPlay loop muted id='membersOnlyDemo'>
+                        <source src={membersOnlyDemo} type="video/mp4" />
+                        <source src="movie.ogg" type="video/ogg" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div className='project-description'>
+                    <button className='project-tech-stack' disabled={true}>Node.js</button>
+                    <button className='project-tech-stack' disabled={true}>MongoDB</button>
+                    <button className='project-tech-stack' disabled={true}>CSS</button>
+                </div>
+
+                <div className='project-comments'>
+                    <p>The demo may take a few moments to spin up</p>
+                </div>
+
+                <div className='project-buttons'>
+                    <a href='https://github.com/RShillgit/Members-Only' target="_blank" rel="noopener noreferrer">
+                        <button>Repo</button>
+                    </a>
+                    <a href='https://members-only-hfy4.onrender.com' target="_blank" rel="noopener noreferrer">
+                        <button>Demo</button>
+                    </a>
+                </div>
+            </div>
 
             <div className='project-example'>
                 <div className='project-title'>
@@ -33,36 +66,6 @@ const Projects = () => {
                         <button>Demo</button>
                     </a>
                 </div>
-
-            </div>
-
-            <div className='project-example'>
-                <div className='project-title'>
-                    <h3>Todo List</h3>
-                </div>
-                <div className='project-demo'>
-                    <video autoPlay loop muted id='todolistDemo'>
-                        <source src={todolistDemo} type="video/mp4" />
-                        <source src="movie.ogg" type="video/ogg" />
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-
-                <div className='project-description'>
-                    <button className='project-tech-stack' disabled={true}>JavaScript</button>
-                    <button className='project-tech-stack' disabled={true}>HTML</button>
-                    <button className='project-tech-stack' disabled={true}>CSS</button>
-                </div>
-
-                <div className='project-buttons'>
-                    <a href='https://github.com/RShillgit/Todo-List' target="_blank" rel="noopener noreferrer">
-                        <button>Repo</button>
-                    </a>
-                    <a href='https://rshillgit.github.io/Todo-List/' target="_blank" rel="noopener noreferrer">
-                        <button>Demo</button>
-                    </a>
-                </div>
-
             </div>
 
             <div className='project-example'>
@@ -90,7 +93,6 @@ const Projects = () => {
                         <button>Demo</button>
                     </a>
                 </div>
-
             </div>
 
         </div>
