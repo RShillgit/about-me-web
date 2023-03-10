@@ -1,21 +1,19 @@
 {
   "files": {
-    "main.css": "/about-me-web/static/css/main.b94fd94e.css",
-    "main.js": "/about-me-web/static/js/main.e57f3dc3.js",
+    "main.css": "/about-me-web/static/css/main.441b6d60.css",
+    "main.js": "/about-me-web/static/js/main.a24d4db8.js",
+    "static/media/Members Only Demo.mp4": "/about-me-web/static/media/Members Only Demo.3aa66da66d3203de94ec.mp4",
     "static/media/Battleship Demo.mp4": "/about-me-web/static/media/Battleship Demo.6eeb075433aa332f7e39.mp4",
     "static/media/Photo Tag Demo.mp4": "/about-me-web/static/media/Photo Tag Demo.9a1f224c8e113e9e37b9.mp4",
-    "static/media/marathon-thumbsUp-fullScreen.jpg": "/about-me-web/static/media/marathon-thumbsUp-fullScreen.460273add911f0da132d.jpg",
-    "static/media/Todo List Demo.mp4": "/about-me-web/static/media/Todo List Demo.a80bcc2dc9295c0069f3.mp4",
     "static/media/marathon-thumbsUp.jpg": "/about-me-web/static/media/marathon-thumbsUp.0b609b1c541771dd5706.jpg",
     "static/media/marathon-thumbs-up-zoomed.jpg": "/about-me-web/static/media/marathon-thumbs-up-zoomed.cc740d68e8271fbc3a8b.jpg",
-    "static/media/marathon-zoomed.jpg": "/about-me-web/static/media/marathon-zoomed.8e25803322cdfd497a8b.jpg",
     "static/media/Exo2-VariableFont_wght.ttf": "/about-me-web/static/media/Exo2-VariableFont_wght.718ec91358aa7ee8083b.ttf",
     "index.html": "/about-me-web/index.html",
-    "main.b94fd94e.css.map": "/about-me-web/static/css/main.b94fd94e.css.map",
-    "main.e57f3dc3.js.map": "/about-me-web/static/js/main.e57f3dc3.js.map"
+    "main.441b6d60.css.map": "/about-me-web/static/css/main.441b6d60.css.map",
+    "main.a24d4db8.js.map": "/about-me-web/static/js/main.a24d4db8.js.map"
   },
   "entrypoints": [
-    "static/css/main.b94fd94e.css",
-    "static/js/main.e57f3dc3.js"
+    "static/css/main.441b6d60.css",
+    "static/js/main.a24d4db8.js"
   ]
 }
