@@ -16,12 +16,20 @@
     justify-content: center;
 }
 .about-skills {
+    width: 80%;
     display: flex;
-    flex-shrink: 0;
+    justify-content: center;
 }
-.about-skills img {
-    
-    width: 15vw;
+.about-skills-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+    padding: 1vw;
+    grid-gap: 0.5rem;
+    justify-content: center;
+}
+.about-skills .about-skills-grid img {
+    width: 100px;
     max-width: 100px;
 }
 #edu h2 {

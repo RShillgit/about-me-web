@@ -104,6 +104,7 @@
 /* Condensed Navbar */
 .navbar.condensed {
     justify-content: space-between;
+    min-width: 200px;
 }
 .navbar.condensed .left-links {
     margin-left: 2vw;

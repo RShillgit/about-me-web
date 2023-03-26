@@ -24,9 +24,11 @@
     color: var(--accent-color);
 }
 .project-description {
-    display: flex;
-    gap: 3vw;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     padding: 1vw;
+    grid-gap: 3vw;
 }
 .project-description .project-tech-stack, .project-buttons a button {
     border-radius: 0.5rem;
