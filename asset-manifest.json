@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/about-me-web/static/css/main.441b6d60.css",
-    "main.js": "/about-me-web/static/js/main.a24d4db8.js",
+    "main.css": "/about-me-web/static/css/main.52191c8b.css",
+    "main.js": "/about-me-web/static/js/main.6b848fbf.js",
     "static/media/Members Only Demo.mp4": "/about-me-web/static/media/Members Only Demo.3aa66da66d3203de94ec.mp4",
-    "static/media/Battleship Demo.mp4": "/about-me-web/static/media/Battleship Demo.6eeb075433aa332f7e39.mp4",
+    "static/media/Blog API Demo.mp4": "/about-me-web/static/media/Blog API Demo.93eb1c030d683d7255ea.mp4",
     "static/media/Photo Tag Demo.mp4": "/about-me-web/static/media/Photo Tag Demo.9a1f224c8e113e9e37b9.mp4",
     "static/media/marathon-thumbsUp.jpg": "/about-me-web/static/media/marathon-thumbsUp.0b609b1c541771dd5706.jpg",
     "static/media/marathon-thumbs-up-zoomed.jpg": "/about-me-web/static/media/marathon-thumbs-up-zoomed.cc740d68e8271fbc3a8b.jpg",
     "static/media/Exo2-VariableFont_wght.ttf": "/about-me-web/static/media/Exo2-VariableFont_wght.718ec91358aa7ee8083b.ttf",
     "index.html": "/about-me-web/index.html",
-    "main.441b6d60.css.map": "/about-me-web/static/css/main.441b6d60.css.map",
-    "main.a24d4db8.js.map": "/about-me-web/static/js/main.a24d4db8.js.map"
+    "main.52191c8b.css.map": "/about-me-web/static/css/main.52191c8b.css.map",
+    "main.6b848fbf.js.map": "/about-me-web/static/js/main.6b848fbf.js.map"
   },
   "entrypoints": [
-    "static/css/main.441b6d60.css",
-    "static/js/main.a24d4db8.js"
+    "static/css/main.52191c8b.css",
+    "static/js/main.6b848fbf.js"
   ]
 }
