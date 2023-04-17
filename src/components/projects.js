@@ -2,7 +2,6 @@ import '../styles/projects.css';
 import fakebookDemo from '../videos/Fakebook Demo.mp4';
 import blogApiDemo from '../videos/Blog API Demo.mp4';
 import membersOnlyDemo from '../videos/Members Only Demo.mp4';
-import phototagDemo from '../videos/Photo Tag Demo.mp4';
 
 const Projects = () => {
     return (
@@ -13,7 +12,7 @@ const Projects = () => {
                     <h3>Fakebook</h3>
                 </div>
                 <div className='project-demo'>
-                    <video autoPlay loop muted id='phototagDemo'>
+                    <video autoPlay loop muted id='fakebookDemo'>
                         <source src={fakebookDemo} type="video/mp4" />
                         <source src="movie.ogg" type="video/ogg" />
                         Your browser does not support the video tag.
