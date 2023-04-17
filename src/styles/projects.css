@@ -43,6 +43,7 @@
 }
 .project-comments p {
     font-size: medium;
+    text-align: center;
 }
 .project-buttons {
     padding: 1vw;
