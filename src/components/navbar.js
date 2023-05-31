@@ -150,7 +150,7 @@ const NavBar = () => {
 
         // Resume
         else if (e.target.id === 'navbar-resume') {
-            window.open('https://docs.google.com/document/d/1WVmV5dWgfPK7tkENVJei2R3YrxCxqCBkKU8thlsU9Hg/edit?usp=sharingb')
+            window.open('https://docs.google.com/document/d/1RMrnSnbCPPyWBn5JXO77D-GIKd9VCConEX6lKxJIlzQ/edit?usp=sharing')
         }
     }
 

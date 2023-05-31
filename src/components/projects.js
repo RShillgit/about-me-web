@@ -26,8 +26,9 @@ const Projects = () => {
                     <button className='project-tech-stack' disabled={true}>MongoDB</button>
                 </div>
 
-                <div className='project-comments'>
-                    <p>The demo may take a few moments to spin up</p>
+                <div className='project-summary'>
+                    <p>A facebook inspired social media application that allows users to post, like, comment, send messages, update profile information, add friends and more all with their associated CRUD operations.</p>
+                    
                 </div>
 
                 <div className='project-buttons'>
@@ -37,6 +38,10 @@ const Projects = () => {
                     <a href='https://deadpan-meal-production.up.railway.app' target="_blank" rel="noopener noreferrer">
                         <button>Demo</button>
                     </a>
+                </div>
+
+                <div className='project-comments'>
+                    <p>* The demo may take a few moments to spin up</p>
                 </div>
             </div>
 
@@ -60,8 +65,8 @@ const Projects = () => {
                     <button className='project-tech-stack' disabled={true}>MongoDB</button>
                 </div>
 
-                <div className='project-comments'>
-                    <p>The demo may take a few moments to spin up</p>
+                <div className='project-summary'>
+                    <p>A food/calorie tracking application that allows users to view/add/update/delete food items from their daily food log, edit their daily calorie budget, and view daily macronutrient information.  Each calendar day has its own food log, so users can view logs from previous days or even plan out their meals ahead of time.</p>
                 </div>
 
                 <div className='project-buttons'>
@@ -72,6 +77,11 @@ const Projects = () => {
                         <button>Demo</button>
                     </a>
                 </div>
+
+                <div className='project-comments'>
+                    <p>* The demo may take a few moments to spin up</p>
+                </div>
+
             </div>
 
             <div className='project-example'>
@@ -93,18 +103,23 @@ const Projects = () => {
                     <button className='project-tech-stack' disabled={true}>MongoDB</button>
                 </div>
 
-                <div className='project-comments'>
-                    <p>The demo may take a few moments to spin up</p>
+                <div className='project-summary'>
+                    <p>A simple blog website that allows users to read and comment on blog posts.</p>
                 </div>
 
                 <div className='project-buttons'>
                     <a href='https://github.com/RShillgit/Blog-Api' target="_blank" rel="noopener noreferrer">
                         <button>Repo</button>
                     </a>
-                    <a href='https://rshill-blog-production.up.railway.app/' target="_blank" rel="noopener noreferrer">
+                    <a href='https://blog-api-prod.up.railway.app/' target="_blank" rel="noopener noreferrer">
                         <button>Demo</button>
                     </a>
                 </div>
+
+                <div className='project-comments'>
+                    <p>* The demo may take a few moments to spin up</p>
+                </div>
+
             </div>
 
         </div>
