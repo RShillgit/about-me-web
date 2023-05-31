@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/about-me-web/static/css/main.83c43733.css",
-    "main.js": "/about-me-web/static/js/main.22f5fb96.js",
+    "main.css": "/about-me-web/static/css/main.04f86b5d.css",
+    "main.js": "/about-me-web/static/js/main.3763c88a.js",
     "static/media/Blog API Demo.mp4": "/about-me-web/static/media/Blog API Demo.93eb1c030d683d7255ea.mp4",
     "static/media/Food Logger Demo.mp4": "/about-me-web/static/media/Food Logger Demo.7cbf522f0f783061a8f4.mp4",
     "static/media/Fakebook Demo.mp4": "/about-me-web/static/media/Fakebook Demo.b7ff04cc679c38118847.mp4",
@@ -9,11 +9,11 @@
     "static/media/marathon-thumbs-up-zoomed.jpg": "/about-me-web/static/media/marathon-thumbs-up-zoomed.cc740d68e8271fbc3a8b.jpg",
     "static/media/Exo2-VariableFont_wght.ttf": "/about-me-web/static/media/Exo2-VariableFont_wght.718ec91358aa7ee8083b.ttf",
     "index.html": "/about-me-web/index.html",
-    "main.83c43733.css.map": "/about-me-web/static/css/main.83c43733.css.map",
-    "main.22f5fb96.js.map": "/about-me-web/static/js/main.22f5fb96.js.map"
+    "main.04f86b5d.css.map": "/about-me-web/static/css/main.04f86b5d.css.map",
+    "main.3763c88a.js.map": "/about-me-web/static/js/main.3763c88a.js.map"
   },
   "entrypoints": [
-    "static/css/main.83c43733.css",
-    "static/js/main.22f5fb96.js"
+    "static/css/main.04f86b5d.css",
+    "static/js/main.3763c88a.js"
   ]
 }
