@@ -12,10 +12,8 @@ const About = () => {
                 <div className='about-section-content'>
                     <div className="about-education">
                         <ul>
-                            <li>B.S in Exercise Science from Suny Cortland</li>
-                            <ul><li>2018-2022</li></ul>
-                            <li>Coding self-study</li>
-                            <ul><li>June 2022 - Present</li></ul>
+                            <li>B.S in Exercise Science from Suny Cortland {"(2018 - 2022)"}</li>
+                            <li>Coding self-study {"(June 2022 - Present)"}</li>
                         </ul>
                     </div>
                 </div>
@@ -69,9 +67,11 @@ const About = () => {
                         <div className='about-skills-grid'>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt='Node.js'/>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt='JavaScript'/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" alt='Typescript'/>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt='React'/>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt='CSS3'/>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt='HTML5'/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt='CSS3'/>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt='TailwindCSS'/>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" alt='MongoDB'/>
                         </div>
                     </div>

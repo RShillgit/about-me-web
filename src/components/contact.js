@@ -3,13 +3,6 @@ import '../styles/contact.css';
 import $ from 'jquery';
 import check from '../images/check.png';
 
-/*
-    Add an animation after clicking submit button that closes the textarea,
-    then renders a check mark and a message that says something like,
-    "Your message has been sent to Robert.Siciliano22@gmail.com Thank you 
-    for viewing my website", then rerenders the textarea.
-*/
-
 const Contact = () => {
 
     const [messageText, setMessageText] = useState('');
@@ -112,7 +105,7 @@ const Contact = () => {
 
                 <input type="hidden" name="_next" value="localhost:3000"></input>
 
-                <textarea className='messageTextArea' onChange={handleTextAreaChange} placeholder="Leave me a meessage" name='Message'/>
+                <textarea className='messageTextArea' onChange={handleTextAreaChange} placeholder="Leave me a message" name='Message'/>
                 
                 {messageSentConfirmation}
 
