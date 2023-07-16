@@ -26,7 +26,6 @@ const About = () => {
 
                 <div className='about-section-content'>
                     <div className="about-interests">
-                     
                         <ul>
                             <li>Weight Lifting - more specifically strength and bodybuilding style training</li>
                             <li>
