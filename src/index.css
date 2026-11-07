@@ -1,0 +1,117 @@
+@import 'tailwindcss';
+
+/*
+ * Color tokens. Dark is the default; `html.light` swaps the palette.
+ * Components use the Tailwind names below (bg-bg, text-muted, border-line, text-up, ...).
+ */
+:root {
+  --bg: #0a0d12;
+  --surface: #10151c;
+  --surface-2: #161d27;
+  --line: #222b37;
+  --text: #e7eaef;
+  --muted: #8d97a7;
+  --faint: #5d6776;
+  --up: #3ddc97;
+  --down: #ff6b6b;
+  --warn: #f5b544;
+  --grid: rgb(141 151 167 / 0.07);
+  color-scheme: dark;
+}
+
+html.light {
+  --bg: #f6f7f9;
+  --surface: #ffffff;
+  --surface-2: #eef1f4;
+  --line: #dde2e8;
+  --text: #0d1117;
+  --muted: #545e6c;
+  --faint: #8a94a2;
+  --up: #0c8f58;
+  --down: #cf3b3b;
+  --warn: #a8690f;
+  --grid: rgb(13 17 23 / 0.05);
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--line);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-up: var(--up);
+  --color-down: var(--down);
+  --color-warn: var(--warn);
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-bg font-sans text-text antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+  ::selection {
+    background: color-mix(in srgb, var(--up) 30%, transparent);
+  }
+  :focus-visible {
+    outline: 2px solid var(--up);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Faint chart-paper grid behind the hero. */
+@utility bg-grid {
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+@keyframes ticker {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.animate-ticker {
+  animation: ticker 45s linear infinite;
+}
+.animate-pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-ticker,
+  .animate-pulse-dot {
+    animation: none;
+  }
+}
