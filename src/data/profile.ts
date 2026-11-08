@@ -1,25 +1,20 @@
-import { yearsSince } from '../lib/dates';
+import { yearsSince } from "../lib/dates";
+import headshot from "../assets/headshot.jpg";
 
 export const profile = {
-  name: 'Robert Siciliano',
-  role: 'Full-Stack Software Engineer',
-  location: 'Austin, TX',
-  email: 'Robert.Siciliano22@gmail.com',
+  name: "Robert Siciliano",
+  role: "Full-Stack Software Engineer",
+  location: "Austin, TX",
+  email: "Robert.Siciliano22@gmail.com",
   links: {
-    github: 'https://github.com/RShillgit',
-    linkedin: 'https://www.linkedin.com/in/robert-siciliano-120379240/',
+    github: "https://github.com/RShillgit",
+    linkedin: "https://www.linkedin.com/in/robert-siciliano-120379240/",
     resume:
-      'https://docs.google.com/document/d/1RMrnSnbCPPyWBn5JXO77D-GIKd9VCConEX6lKxJIlzQ/edit?usp=sharing',
-    source: 'https://github.com/RShillgit/about-me-web',
+      "https://docs.google.com/document/d/1RMrnSnbCPPyWBn5JXO77D-GIKd9VCConEX6lKxJIlzQ/edit?usp=sharing",
+    source: "https://github.com/RShillgit/about-me-web",
   },
 
-  /**
-   * Headshot for the hero card. Leave undefined to show a placeholder.
-   * To add one: drop the file in src/assets/, then
-   *   import headshot from '../assets/headshot.jpg';
-   * and set `headshot: headshot`.
-   */
-  headshot: undefined as string | undefined,
+  headshot: headshot as string | undefined,
 } as const;
 
 /*
@@ -30,5 +25,7 @@ export const since = {
   trading: { year: 2022, month: 11 }, // daily futures trading
 };
 
-export const yearsProfessional = () => yearsSince(since.professional.year, since.professional.month);
-export const yearsTrading = () => yearsSince(since.trading.year, since.trading.month);
+export const yearsProfessional = () =>
+  yearsSince(since.professional.year, since.professional.month);
+export const yearsTrading = () =>
+  yearsSince(since.trading.year, since.trading.month);
