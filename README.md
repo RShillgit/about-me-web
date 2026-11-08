@@ -48,5 +48,11 @@ import suffolk from '../assets/suffolk-2026.jpg';
 { name: 'Suffolk County Marathon', /* ... */ photo: suffolk },
 ```
 
-The headshot works the same way through `headshot` in `src/data/profile.ts`. Slots are 4:3 and crop with
-`object-cover`, so landscape photos fit best.
+Race photos sit in a 4:5 portrait frame at every screen size. Any shape works because the photo is cropped
+to fit, but one already cropped to 4:5 (at least 800×1000px) shows exactly as-is. If a crop cuts off the
+wrong part, set `photoPosition` (a CSS `object-position`, e.g. `'50% 15%'` or `'left center'`).
+
+The headshot works the same way through `headshot` / `headshotPosition` in `src/data/profile.ts`. Its frame
+is 4:3; use at least 1000px wide so it stays sharp on high-DPI screens.
+
+File names are case-sensitive on the deploy server, so the import must match the file exactly.

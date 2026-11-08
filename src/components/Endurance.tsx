@@ -57,8 +57,8 @@ function RaceCard({ race }: { race: Race }) {
         upcoming ? 'border-dashed border-warn/40' : 'border-line'
       }`}
     >
-      {/* Every card uses the same frame: 4:3 when cards are wide (1–2 columns), 4:5 in the 4-column row. */}
-      <div className="relative aspect-[4/3] overflow-hidden border-b border-line lg:aspect-[4/5]">
+      {/* Same 4:5 portrait frame on every card at every screen size; photos are cropped to fit. */}
+      <div className="relative aspect-[4/5] overflow-hidden border-b border-line">
         <Photo
           src={race.photo}
           position={race.photoPosition}

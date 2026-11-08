@@ -22,7 +22,7 @@ export const profile = {
    */
   headshot: headshot as string | undefined,
   /** Optional focal point for cropping the headshot, e.g. 'top' or 'center 30%'. */
-  headshotPosition: undefined as string | undefined,
+  headshotPosition: "50% 30%" as string | undefined,
 } as const;
 
 /*
