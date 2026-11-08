@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robert Siciliano · Software Engineer</title>
+    <meta
+      name="description"
+      content="Robert Siciliano is a full-stack software engineer in Austin, TX building production fintech and insurance software with React, TypeScript, NestJS, and AWS. Marathoner, ultrarunner, and futures trader."
+    />
+    <meta name="author" content="Robert Siciliano" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Robert Siciliano · Software Engineer" />
+    <meta
+      property="og:description"
+      content="Full-stack engineer. Sub-3 marathoner. Index futures trader. Based in Austin, TX."
+    />
+    <meta property="og:url" content="https://rshillgit.github.io/about-me-web/" />
+    <meta name="theme-color" content="#0a0d12" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      // Apply the saved theme before first paint so there's no flash. Dark is the default.
+      try {
+        if (localStorage.getItem('theme') === 'light') document.documentElement.classList.add('light');
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
