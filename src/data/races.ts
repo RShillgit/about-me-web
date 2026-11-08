@@ -5,6 +5,10 @@ import { parseDate } from '../lib/dates';
  *
  * - status 'upcoming' entries show as "Next up" and hide automatically a few days after their date.
  * - photo: import an image from src/assets and set it here; leave undefined for a placeholder.
+ *   Any shape works: every card crops its photo to the same frame (4:3 on narrow screens, 4:5 in
+ *   the 4-column desktop row), so keep the subject near the middle of the shot.
+ * - photoPosition: optional focal point that stays in frame when cropping (CSS object-position),
+ *   e.g. 'top' to keep a face, 'center 30%', or '50% 20%'.
  */
 export type RaceStatus = 'pr' | 'finish' | 'dnf' | 'upcoming';
 
@@ -17,6 +21,7 @@ export interface Race {
   tag?: string;
   note: string;
   photo?: string;
+  photoPosition?: string;
 }
 
 export const races: Race[] = [

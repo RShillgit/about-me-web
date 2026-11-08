@@ -71,8 +71,13 @@ export function Hero() {
             <span className="size-2.5 rounded-full bg-up/70" />
             <span className="ml-3 font-mono text-xs text-faint">rs@austin: ~/profile</span>
           </div>
-          <div className="aspect-[4/3] border-b border-line">
-            <Photo src={profile.headshot} alt={`Portrait of ${profile.name}`} label="Headshot" />
+          <div className="aspect-[4/3] overflow-hidden border-b border-line">
+            <Photo
+              src={profile.headshot}
+              position={profile.headshotPosition}
+              alt={`Portrait of ${profile.name}`}
+              label="Headshot"
+            />
           </div>
           <dl className="divide-y divide-line font-mono text-xs sm:text-sm">
             {rows.map(([key, value, up]) => (

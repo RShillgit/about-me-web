@@ -20,6 +20,8 @@ export const profile = {
    * and set `headshot: headshot`.
    */
   headshot: undefined as string | undefined,
+  /** Optional focal point for cropping the headshot, e.g. 'top' or 'center 30%'. */
+  headshotPosition: undefined as string | undefined,
 } as const;
 
 /*
