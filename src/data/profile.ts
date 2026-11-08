@@ -14,7 +14,15 @@ export const profile = {
     source: "https://github.com/RShillgit/about-me-web",
   },
 
+  /**
+   * Headshot for the hero card. Leave undefined to show a placeholder.
+   * To add one: drop the file in src/assets/, then
+   *   import headshot from '../assets/headshot.jpg';
+   * and set `headshot: headshot`.
+   */
   headshot: headshot as string | undefined,
+  /** Optional focal point for cropping the headshot, e.g. 'top' or 'center 30%'. */
+  headshotPosition: undefined as string | undefined,
 } as const;
 
 /*

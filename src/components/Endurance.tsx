@@ -4,10 +4,10 @@ import { Photo } from './Photo';
 import { Section } from './Section';
 
 const statusStyle: Record<RaceStatus, { label: string; className: string }> = {
-  pr: { label: 'PR', className: 'text-up border-up/40 bg-up/10' },
-  finish: { label: 'FINISH', className: 'text-up border-up/40 bg-up/10' },
-  dnf: { label: 'DNF', className: 'text-down border-down/40 bg-down/10' },
-  upcoming: { label: 'NEXT UP', className: 'text-warn border-warn/40 bg-warn/10' },
+  pr: { label: 'PR', className: 'text-up border-up/50' },
+  finish: { label: 'FINISH', className: 'text-up border-up/50' },
+  dnf: { label: 'DNF', className: 'text-down border-down/50' },
+  upcoming: { label: 'NEXT UP', className: 'text-warn border-warn/50' },
 };
 
 export function Endurance() {
@@ -57,10 +57,16 @@ function RaceCard({ race }: { race: Race }) {
         upcoming ? 'border-dashed border-warn/40' : 'border-line'
       }`}
     >
-      <div className="relative aspect-[4/3] border-b border-line">
-        <Photo src={race.photo} alt={`${race.name}, ${monthYear(race.date)}`} label={upcoming ? 'Coming soon' : 'Race photo'} />
+      {/* Every card uses the same frame: 4:3 when cards are wide (1–2 columns), 4:5 in the 4-column row. */}
+      <div className="relative aspect-[4/3] overflow-hidden border-b border-line lg:aspect-[4/5]">
+        <Photo
+          src={race.photo}
+          position={race.photoPosition}
+          alt={`${race.name}, ${monthYear(race.date)}`}
+          label={upcoming ? 'Coming soon' : 'Race photo'}
+        />
         <span
-          className={`absolute top-3 left-3 rounded border px-2 py-0.5 font-mono text-[11px] font-medium tracking-wider backdrop-blur ${status.className}`}
+          className={`absolute top-3 left-3 rounded border px-2 py-0.5 bg-bg/85 font-mono text-[11px] font-medium tracking-wider shadow-sm backdrop-blur ${status.className}`}
         >
           {status.label}
         </span>
